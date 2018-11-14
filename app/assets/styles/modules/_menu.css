@@ -1,0 +1,63 @@
+.menu {
+        height: 134px;
+        width: 80rem;
+        margin: 0 auto;
+        line-height: 134px;
+        vertical-align: middle;
+        position: fixed;
+
+        &__logo {
+        	position: relative;
+        	height: 134px;
+
+        	img {
+	        	position: absolute;
+	        	top: 0;
+	        	bottom: 0;
+	        	margin: auto;
+	        }
+        }
+	}
+
+#menu {
+    display: none;
+
+
+
+    @mixin atLarge {
+    	height: 100vh;
+    	width: 10%;
+    	background-color: $mainGrey;
+    	position: fixed;
+    	left: 0;
+    	display: block;
+
+    	.menu__social {
+    		height: 100vh;
+    		width: auto;
+    		text-align: right;
+    		vertical-align: bottom;
+    	}
+
+    	.menu__facebook {
+    		transform: rotate(-90deg);
+    	}
+
+	    .menu__instagram {
+	    	transform: rotate(-90deg);
+	    }
+    }
+}
+
+#right_bar {
+    display: none;
+
+    @mixin atLarge {
+    	height: 100vh;
+    	width: 10%;
+    	background-color: $mainGrey;
+    	position: fixed;
+    	right: 0;
+    	display: block;
+    }
+}

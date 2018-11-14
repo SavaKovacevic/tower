@@ -1,0 +1,38 @@
+.btn {
+    height: 2rem;
+    width: 7rem;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0.8rem;
+    font-family: 'Proxima Nova Lt', Georgia, sans-serif;
+    color: $mainBlue;
+    text-decoration: none;
+    border: 1px solid $mainBlue;
+    display: inline-block;
+    line-height: 2rem;
+
+
+        @mixin atSmall {
+            height: 3rem;
+            width: 10rem;
+            line-height: 3rem;
+            font-size: 1.125rem;
+            }
+            
+        @mixin atMedium {
+            height: 4rem;
+            width: 14.5rem;
+            line-height: 4rem;
+            font-size: 1.125rem;
+            }
+
+        @mixin atLarge {
+            margin: 0;
+            }
+
+
+    &--hero {
+        background-color:rgba(255, 255, 255, 0.43);
+        margin: 0;
+        }
+    }
