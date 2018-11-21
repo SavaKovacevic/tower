@@ -1,0 +1,47 @@
+.services {
+	display: flex;
+	flex-direction: column;
+	color: white;
+
+
+	@mixin atMedium {
+  		flex-direction: row;
+	}
+
+    &__service {
+    	display: flex;
+  		flex-direction: column;
+    	border-bottom: 1px solid white;
+    	object-fit: contain;
+    	flex: 1;
+    	justify-content: center;
+    }
+
+    &__info {
+        	font-size: .7rem;
+        	display: flex;
+        	flex: 1;
+        	align-items: center;
+
+        	&--content {
+        		display: flex;
+        		flex: 1;
+        	}
+
+        } 
+
+    &__exams {
+    	background: no-repeat bottom/cover;
+    	background-image: linear-gradient(rgba(0, 58, 97, 0.5), rgba(0, 58, 97, 0.5)), url(../../assets/images/exams--bg.jpg);
+    }
+
+    &__conversation {
+    	background: no-repeat bottom/cover;
+    	background-image: linear-gradient(rgba(0, 58, 97, 0.5), rgba(0, 58, 97, 0.5)), url(../../assets/images/coversation--bg.jpg);
+    }
+
+    &__translate {
+    	background: no-repeat bottom/cover;
+    	background-image: linear-gradient(rgba(0, 58, 97, 0.5), rgba(0, 58, 97, 0.5)), url(../../assets/images/translate--bg.jpg);
+    }
+}

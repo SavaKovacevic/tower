@@ -1,0 +1,114 @@
+.footer {
+	padding: 50px 0;
+
+	&__logo {
+		text-align: center;
+		
+		@mixin atMedium2 {
+			display: inline-block;
+			width: 25%;
+		}
+	}
+
+	&__info {
+		text-align: center;
+		padding: 20px;
+		
+		@mixin atMedium2 {
+			text-align: left;
+			display: inline-block;
+			width: 41%;
+		}
+	}
+
+	&__newsletter {
+		text-align: center;
+		
+		@mixin atMedium2 {
+			display: inline-block;
+			width: 33%;
+		}
+	}
+
+	&__form {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    max-width: 300px;
+    height: 50px;
+    text-align: left;
+
+    input {
+      @include placeholder {
+        color: #fff;
+        text-transform: capitalize;
+      }
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      border: 0;
+      border-radius: 4px;
+      background: $mainBlue;
+      outline: 0;
+      padding: 2em 1em 1em 1em;
+      color: #fff;
+      font-size: 1em;
+      transition: background 0.35s ease-out;
+      
+      &:focus {
+        background: $secondaryBlue;
+      }
+      
+      &:focus + label {
+        transform: translateY(-10px) scale(0.8);
+        color: $tertiaryBlue;
+        
+        + button {
+          opacity: 1;
+        }
+      }
+    }
+
+    label {
+      position: absolute;
+      left: 1em;
+      top: 50%;
+      margin-top: -8px;
+      color: #fff;
+      text-transform: capitalize;
+      transform-origin: left center;
+      transition: transform 0.25s ease-out, color 0.25s ease-out;
+    }
+
+    button {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 60px;
+      height: 100%;
+      border: 0;
+      border-radius: 4px;
+      font-size: 1em;
+      background: $mainBlue;
+      color: $tertiaryBlue;
+      cursor: pointer;
+      opacity: 0;
+      outline: none;
+      transition: opacity 0.35s ease-out, width 0.5s ease-out, background 0.25s ease-out;
+    }
+
+    button.is-active {
+      background: $mainBlue;
+      color: #mainOrange;
+    }
+
+    button.is-done {
+      width: 100%;
+      opacity: 1;
+    }
+
+
+  }
+}
+

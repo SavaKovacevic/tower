@@ -1,18 +1,11 @@
 .welcome {
-	height: 470px;
-	max-width: 640px;
-	margin: 0 auto;
-	text-align: center;
-	background-color: white;
-	position: relative;
+	margin-bottom: 100px;
+	margin-top: 100px;
 
 	&__content {
-		position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        text-align: center;
-        margin: 0 50px;
+		max-width: 640px;
+		margin-right: auto;
+		margin-left: auto;
 	}
 
-	
 }

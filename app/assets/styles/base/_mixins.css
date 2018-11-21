@@ -5,6 +5,12 @@
 }
 
 @define-mixin atMedium {
+	@media (min-width: 800px) {
+		@mixin-content;
+	}
+}
+
+@define-mixin atMedium2 {
 	@media (min-width: 1000px) {
 		@mixin-content;
 	}
@@ -20,4 +26,11 @@
 	@media (min-width: 1460px) {
 		@mixin-content;
 	}
+}
+
+@define-mixin placeholder {
+  &::-webkit-input-placeholder { @content }
+  &:-moz-placeholder { @content }
+  &::-moz-placeholder { @content }
+  &:-ms-input-placeholder { @content }
 }

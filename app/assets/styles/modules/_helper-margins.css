@@ -1,0 +1,47 @@
+.bot-0 {
+	margin-bottom: 0;
+}
+
+.bot-50-100 {
+	margin-bottom: 50px;
+
+	@mixin atMedium {
+		margin-bottom: 100px;
+	}
+}
+
+.bot-50 {
+	margin-bottom: 50px;
+
+	@mixin atMedium2 {
+		margin-bottom: 0;
+	}
+}
+
+.bot-100 {
+	margin-bottom: 100px;
+}
+
+.top-50-100 {
+	margin-top: 50px;
+
+	@mixin atMedium {
+		margin-top: 100px;
+	}
+}
+
+.top-50 {
+	margin-top: 50px;
+}
+
+.top-100 {
+	margin-top: 100px;
+}
+
+.top-courses {
+	margin-top: 50px;
+
+	@mixin atMedium {
+		margin-top: -70px;
+	}
+}

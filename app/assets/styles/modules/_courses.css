@@ -1,0 +1,37 @@
+.courses {
+    &__course {
+    	width: 100%;
+    	display: inline-block;
+    	border-bottom: 1px solid white;
+    	object-fit: contain;
+
+    	@mixin atMedium {
+    		width: 32%;
+    		border-bottom: 0;
+        }
+
+        @mixin atLarge {
+    		width: 33%;
+
+        }
+
+
+
+        img {
+		    max-width: 100%;
+		    height: auto;
+
+        	@mixin atMedium {
+        		max-width: 80%;
+		    	height: auto;
+        	}
+
+        	@mixin atLarger {
+        		max-width: 100%;
+		    	height: auto;
+        	}
+        }
+
+
+    }
+}

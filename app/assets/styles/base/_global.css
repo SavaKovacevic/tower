@@ -1,32 +1,58 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
-    font-family: 'Proxima Nova', Georgia, sans-serif;
+    font-family: 'Proxima Nova Lt', Georgia, sans-serif;
     color: #131313;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 h1 {
-		margin: 0;
-		font-family: 'Proxima Nova Lt', Georgia, sans-serif;
+	margin: 0;
+	font-family: 'Proxima Nova Lt', Georgia, sans-serif;
+	font-size: 1.5rem;
+
+	@mixin atSmall {
+		font-size: 2.2rem;
+	}
+
+	@mixin atLarge {
+		font-size: 2.8rem;
+	}
+
+	@mixin atLarger {
+		font-size: 3.625rem;
+	}
+}
+
+h2 {
+	font-family: 'Proxima Nova Lt', Georgia, sans-serif;
+	font-size: 1.2rem;
+
+	@mixin atSmall {
 		font-size: 1.5rem;
-
-		@mixin atSmall {
-			font-size: 2.5rem;
-		}
-
-		@mixin atLarge {
-			font-size: 3.625rem;
-		}
 	}
 
-	p {
-		font-size: 1rem;
-		font-family: 'Proxima Nova Lt', Georgia, sans-serif;
-		line-height: 1.5rem;
-		margin-top: 40px;
-		margin-bottom: 40px;
-
-		@mixin atMedium {
-			font-size: 1.1rem;
-			line-height: 1.875rem;
-
-		}
+	@mixin atLarge {
+		font-size: 2rem;
 	}
+
+	@mixin atLarger {
+		font-size: 2.5rem;
+	}
+}
+
+.standard {
+	font-size: 1rem;
+	font-family: 'Proxima Nova Lt', Georgia, sans-serif;
+	line-height: 1.5rem;
+	margin-top: 40px;
+	margin-bottom: 40px;
+
+	@mixin atMedium {
+		font-size: 1.1rem;
+		line-height: 1.875rem;
+	}
+}

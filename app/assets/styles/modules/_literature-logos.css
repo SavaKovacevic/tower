@@ -1,0 +1,77 @@
+.literature-logos {
+	width: 100vw;
+    margin: 0 auto 0 auto;
+    background-color: white;
+    position: relative;
+    text-align: center;
+    margin-bottom: 50px;
+
+    @mixin atMedium {
+    	display: flex;
+  		justify-content: center;
+    }
+   
+
+    &__logo {
+    	text-align: center;
+    	display: flex;
+  		justify-content: center;
+  		width: 100%;
+  		height: 100px;
+
+    	img {
+    		display: block;
+    		height: 45px;
+    		margin: auto;
+    	}
+
+    	@mixin atMedium {
+    		display: flex;
+  			justify-content: center;
+    		margin-left: 20px;
+    		height: 300px;
+    		/*line-height: 300px;*/
+    	}
+    }
+
+    .national-geographic {
+    	margin-top: 50px;
+    	margin-left: 0;
+
+    	@mixin atMedium {
+    		margin-top: 0; 
+    		margin-left: 20px;
+    	}
+    }
+
+    .pearson-longman {
+    	line-height: 150px;
+    	margin-top: 10px;
+
+    	@mixin atMedium {
+    		margin-top: 0;
+    	}    	
+    }
+
+    .oxford {
+    	margin-bottom: 50px;
+    	margin-top: 20px;
+
+    	@mixin atMedium {
+    		margin-bottom: 0;
+    		margin-top: 0;
+    		margin-right: 20px;
+    	}
+    }
+
+    .pearson-longman img {
+    	height: 100px;
+    }
+
+
+
+    @mixin atLarge {
+    	width: 80%;
+    	height: 300px;
+    }
+}

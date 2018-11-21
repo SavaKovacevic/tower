@@ -22,8 +22,6 @@
 #menu {
     display: none;
 
-
-
     @mixin atLarge {
     	height: 100vh;
     	width: 10%;
