@@ -3,7 +3,6 @@
 	flex-direction: column;
 	color: white;
 
-
 	@mixin atMedium {
   		flex-direction: row;
 	}
@@ -15,11 +14,26 @@
     	object-fit: contain;
     	flex: 1;
     	justify-content: center;
+        padding: 50px 0;
+
+        @mixin atLarge {
+            padding: 100px 0;
+        }
+
+        & h2 {
+            @mixin atMedium {
+                margin: 0;
+            }
+        }
+
+        & a {
+            z-index: 1;
+        }
     }
 
     &__info {
         	font-size: .7rem;
-        	display: flex;
+        	display: none;
         	flex: 1;
         	align-items: center;
 
@@ -28,20 +42,23 @@
         		flex: 1;
         	}
 
+            @mixin atMedium {
+                display: flex;
+            }
         } 
 
     &__exams {
     	background: no-repeat bottom/cover;
-    	background-image: linear-gradient(rgba(0, 58, 97, 0.5), rgba(0, 58, 97, 0.5)), url(../../assets/images/exams--bg.jpg);
+    	background-image: linear-gradient(rgba($mainBlue, 0.5), rgba($mainBlue, 0.5)), url(../../assets/images/exams--bg.jpg);
     }
 
     &__conversation {
     	background: no-repeat bottom/cover;
-    	background-image: linear-gradient(rgba(0, 58, 97, 0.5), rgba(0, 58, 97, 0.5)), url(../../assets/images/coversation--bg.jpg);
+    	background-image: linear-gradient(rgba($mainBlue, 0.5), rgba($mainBlue, 0.5)), url(../../assets/images/coversation--bg.jpg);
     }
 
     &__translate {
     	background: no-repeat bottom/cover;
-    	background-image: linear-gradient(rgba(0, 58, 97, 0.5), rgba(0, 58, 97, 0.5)), url(../../assets/images/translate--bg.jpg);
+    	background-image: linear-gradient(rgba($mainBlue, 0.5), rgba($mainBlue, 0.5)), url(../../assets/images/translate--bg.jpg);
     }
 }

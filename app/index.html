@@ -9,82 +9,148 @@
 <body>
 
 
+	
+
+
 <!-- MENU -->
-
-
-<div id='menu'>
-	<div class="menu__social">
-		<div class="menu__instagram">Instagram</div>
-		<div class="menu__facebook">Facebook</div>
+<header class="site-header">
+	<!-- HAMBURGER MENU -->
+	<div class="site-header__hamburger-menu" id="hamburger-menu-toggle">
+		<span class="top"></span>
+		<span class="middle"></span>
+		<span class="bottom"></span>
 	</div>
-</div>
+	<!-- MENU OVERLAY -->
+	<div class="site-header__overlay" id="overlay">
+		<nav class="site-header__overlay--menu">
+			<div class="site-header__overlay--logo"><img src="assets/images/logo--white.png" alt=""></div>
+	    	<ul>
+				<li><a href="#">Zašto Tower</a></li>
+	        	<li><a href="#">Kursevi</a></li>
+	        	<li><a href="#">Međunarodni Ispiti</a></li>
+	        	<li><a href="#">Prevodilačke Usluge</a></li>
+	        	<li><a href="#">Kontakt</a></li>
+			</ul>
 
-<div id='right_bar'>
-</div>
+			<div class="social">
+				<a href="#" class="social__net">
+					<span class="icon icon--facebook"></span>
+					<span class="social__text">Facebook</span>
+				</a>
 
-
-<div class="menu">
-   	
-   	<div class="menu__logo">
-   	
+				<a href="#" class="social__net social__net--margin">
+					<span class="icon icon--instagram"></span>
+					<span class="social__text">Instagram</span>
+				</a>
+			</div>
+		</nav>
+	</div>
+	<!-- LOGO -->
+	<div class="site-header__logo">
    		<img src="assets/images/logo.png" class="logo">
-
    	</div>
+	<!-- INFO -->
+	<div class="site-header__info">
+		<!-- ADRESS -->
+	   	<a href="#" class="site-header__info--adress">
+	   		<span class="icon icon--placeholder site-header__info--icon-background"></span>
+	   		<span class="site-header__info--location">Gandijeva 148a</span>
+	   	</a>
+		<!-- PHONE -->
+	   	<a href="#" class="site-header__info--phone">
+	   		<span class="icon icon--phone site-header__info--icon-background"></span>
+	   		<span class="site-header__info--number">069 11 63 956</span>
+	   	</a>
+	   	<!-- CALL TO ACTION -->
+	   	<div class="site-header__info--button">
+	   		<a href="#"><div class="btn btn--header">
+	   		UPIŠI KURS
+	   		</div></a>
+	   	</div>  	
+   	</div>
+	<!-- FLEXBOX HELPER -->
+   	<div class="right-helper"></div>
+</header>
 
+<!-- SOCIAL -->
+<div class="social">
+	<a href="#" class="social__net">
+		<span class="icon icon--facebook"></span>
+		<span class="social__text">Facebook</span>
+	</a>
+
+	<a href="#" class="social__net social__net--margin">
+		<span class="icon icon--instagram"></span>
+		<span class="social__text">Instagram</span>
+	</a>
 </div>
 
+<!-- SIDELINES -->
+<div class='left-side-line'>
+</div>
+<div class='right-side-line'>
+</div>
 
 <!-- HERO -->
-
 <section id="large-hero" class="large-hero">
+	<div class="large-hero--section large-hero--section--bg1 slide slide1 show">
+	<div class="large-hero__text-content content-wrapper">
+	    <h1 class="large-hero__slogan">
+	        UČINITE <br>SVET SVOG <br>DETETA BOLJIM
+	    </h1>
+	    <a href="#" class="btn btn--hero btn--transition">
+	        SAZNAJ VIŠE
+	    </a>
+    </div>
+    </div>
 
-<!-- <picture class="large-hero__image">
-	<source srcset="assets/images/hero--large.jpg 1920w, assets/images/hero--large-hi-dpi.jpg 3840w" media="(min-width: 1380px)">
-	<source srcset="assets/images/hero--medium.jpg 1380w, assets/images/hero--medium-hi-dpi.jpg 2760w" media="(min-width: 990px)">
-	<source srcset="assets/images/hero--small.jpg 990w, assets/images/hero--small-hi-dpi.jpg 1980w" media="(min-width: 640px)">
-	<img srcset="assets/images/hero--smaller.jpg 640w, assets/images/hero--smaller-hi-dpi.jpg 1280w" alt="Dečak obučen kao superheroj gleda prema suncu">
-</picture> -->
+    <div class="large-hero--section large-hero--section--bg2 slide slide2">
+	<div class="large-hero__text-content content-wrapper">
+	    <h1 class="large-hero__slogan">
+	        UČINITE <br>SVET SVOG <br>DETETA BOLJIM
+	    </h1>
+	    <a href="#" class="btn btn--hero btn--transition">
+	        SAZNAJ VIŠE
+	    </a>
+    </div>
+    </div>
 
-<!-- <img src="images/hero--large-hi-dpi.jpg" class="large-hero__image"> -->
+    <div class="large-hero--section large-hero--section--bg3 slide slide3">
+	<div class="large-hero__text-content content-wrapper">
+	    <h1 class="large-hero__slogan">
+	        UČINITE <br>SVET SVOG <br>DETETA BOLJIM
+	    </h1>
+	    <a href="#" class="btn btn--hero btn--transition">
+	        SAZNAJ VIŠE
+	    </a>
+    </div>
+    </div>
 
-<div class="large-hero__text-content content-wrapper">
-
-	        <h1 class="large-hero__slogan">
-	        	UČINITE <br>SVET SVOG <br>DETETA BOLJIM
-	        </h1>
-
-	        <a href="#" class="btn btn--hero">
-	        	SAZNAJ VIŠE
-	        </a>
-
-        </div>
+    <ul id="large-hero-dots" class="large-hero__dots">
+                    <li class="large-hero__dots--standard large-hero__dots--active dot1"></li><!--
+                    --><li class="large-hero__dots--standard dot2"></li><!--
+                    --><li class="large-hero__dots--standard dot3"></li>
+        </ul>
 </section>
 
 
 <!-- WELCOME -->
-
-
 <section class="welcome section">
-
 	<div class="welcome__content bg-white">
-
 		<h1>DOBRODOŠLI</h1>
-
 		<p class="standard">U <b>Tower školi stranih jezika</b> pronaći ćete kurseve svih nivoa za <b>engleski i nemački jezik</b>. Bilo da vam je potrebna grupna ili individualna nastava, početni ili napredni kurs stranog jezika Tower će vam omogućiti učenje na profesionalnom nivou u najsavremenijim uslovima.</p>
-
 	</div>
 </section>
 
 	
 
 <!-- WHY US -->
-
 <section class="whyus section bg-grey section-wrapper">
     
     <!-- INFO -->
 	<div class="whyus__info content-wrapper">
 
-		<h1 class="whyus__h1">ZAŠTO TOWER</h1>
+		<h1>ZAŠTO TOWER</h1>
 
 		<p class="standard">Više od 16 godina pomažemo polaznicima da svoj engleski ili nemački jezik usavrše, zahvaljujući čemu su postigli prestižan uspeh na međunarodnim ispitima</p>
 
@@ -92,21 +158,21 @@
 
  		<div class="whyus__infocount">
 			<div class="counter">
-				<div class="number">16</div>
+				<div class="number count">16</div>
 				<div class="number-info">Godina postojanja</div>
 			</div>
 			<div class="counter">
-				<div class="number">123</div>
+				<div class="number count">123</div>
 				<div class="number-info">Zadovoljnih učenika</div>
 			</div>
 			<div class="counter">
-				<div class="number">50</div>
+				<div class="number count">50</div>
 				<div class="number-info">Još neka statistika</div>
 			</div>
 		</div>
 
 		<!-- BUTTON -->
-		<a href="#" class="btn bot-50">
+		<a href="#" class="btn btn--transition">
 	        	SAZNAJ VIŠE
 	    </a>
 	   
@@ -124,10 +190,10 @@
 </section>
 
 <section class="literature-logos">
-	<div class="literature-logos__logo national-geographic"><img src="assets/images/national-geographic.png" alt="national geographic logo"></div>
-	<div class="literature-logos__logo macmillan"><img src="assets/images/macmillan.png" alt="macmillan logo"></div>
-	<div class="literature-logos__logo pearson-longman"><img src="assets/images/pearson-longman.png" alt="pearson-longman logo"></div>
-	<div class="literature-logos__logo oxford"><img src="assets/images/oxford.png" alt="oxford university press logo"></div>
+	<div class="literature-logos__logo national-geographic"><a href="https://ngl.cengage.com/" target="_blank"><img src="assets/images/national-geographic.png" alt="national geographic logo"></a></div>
+	<div class="literature-logos__logo macmillan"><a href="http://macmillan.com/" target="_blank"><img src="assets/images/macmillan.png" alt="macmillan logo"></a></div>
+	<div class="literature-logos__logo pearson-longman"><a href="https://www.pearson.com/" target="_blank"><img src="assets/images/pearson-longman.png" alt="pearson-longman logo"></a></div>
+	<div class="literature-logos__logo oxford"><a href="http://global.oup.com/" target="_blank"><img src="assets/images/oxford.png" alt="oxford university press logo"></a></div>
 </section>
 
 
@@ -136,35 +202,35 @@
 <section class="courses section bg-grey">
 
 	<!-- COURSE 1 -->
-	<div class="courses__course top-courses">
+	<div class="courses__course">
 
 		<img src="assets/images/kid.png" alt="Nasmejana, zamišljena učenica, osnovac">
 
 		<h2>KURSEVI ZA <br>OSNOVCE</h2>
 
-		<a href="#" class="btn bot-50-100">SAZNAJ VIŠE</a>
+		<a href="#" class="btn btn--transition">SAZNAJ VIŠE</a>
 
 	</div>
 
 	<!-- COURSE 2 -->
-	<div class="courses__course top-courses">
+	<div class="courses__course">
 
 		<img src="assets/images/young.png" alt="Nasmejana, zamišljena učenica, tinejdžerka">
 
 		<h2>KURSEVI ZA <br> TINEJDŽERE</h2>
 
-		<a href="#" class="btn bot-50-100">SAZNAJ VIŠE</a>
+		<a href="#" class="btn btn--transition">SAZNAJ VIŠE</a>
 
 	</div>
 
 	<!-- COURSE 3 -->
-	<div class="courses__course top-courses">
+	<div class="courses__course">
 
 		<img src="assets/images/adult.png" alt="Odrasla učenica, poslovna mlada žena">
 
 		<h2>KURSEVI ZA <br> ODRASLE</h2>
 
-		<a href="#" class="btn bot-50-100">SAZNAJ VIŠE</a>
+		<a href="#" class="btn btn--transition">SAZNAJ VIŠE</a>
 
 	</div>
 
@@ -183,33 +249,33 @@
 	<!-- COURSE 1 -->
 	<div class="services__service services__exams">
 
-		<h2 class="bot-0 top-50-100">MEĐUNARODNI <br>ISPITI</h2>
+		<h2>MEĐUNARODNI <br>ISPITI</h2>
 
 		<div class="services__info content-wrapper"><p class="service__info--content">CAMBRIDGE ENGLISH: FIRST (FCE); CAMBRIDGE ENGLISH: ADVANCED (CAE), CAMBRIDGE ENGLISH: PROFICIENCY (CPE); IELTS - International English Language Testing System; TOEFL - Test of English as a Foreign Language; SAT; GRE; CAMBRIDGE BEC</p></div>
 
-		<a href="#" class="btn btn--white bot-50-100">SAZNAJ VIŠE</a>
+		<a href="#" class="btn btn--white btn--transition btn--transition--orange">SAZNAJ VIŠE</a>
 
 	</div>
 
 	<!-- COURSE 2 -->
 	<div class="services__service services__conversation">
 
-		<h2 class="bot-0 top-50-100">KONVERZACIJSKI <br> KURS</h2>
+		<h2>KONVERZACIJSKI <br> KURS</h2>
 
-		<p class="services__info"></p>
+		<div class="services__info content-wrapper"><p class="service__info--content">TEME : film, kultura, umetnost, hrana i piće, nauka, šoping, putovanja, posao, ljudi, muzika</p></div>
 
-		<a href="#" class="btn btn--white bot-50-100">SAZNAJ VIŠE</a>
+		<a href="#" class="btn btn--white btn--transition btn--transition--orange">SAZNAJ VIŠE</a>
 
 	</div>
 
 	<!-- COURSE 3 -->
 	<div class="services__service services__translate">
 
-		<h2 class="bot-0 top-50-100">PREVODILAČKE <br> USLUGE</h2>
+		<h2>PREVODILAČKE <br> USLUGE</h2>
 
-		<p class="services__info"></p>
+		<div class="services__info content-wrapper"><p class="service__info--content">PREVOĐENJE SVIH VRSTA OPŠTIH TEKSTOVA, PREVODI SA OVEROM SUDSKOG TUMAČA</p></div>
 
-		<a href="#" class="btn btn--white bot-50-100">SAZNAJ VIŠE</a>
+		<a href="#" class="btn btn--white btn--transition btn--transition--orange">SAZNAJ VIŠE</a>
 
 	</div>
 	
@@ -253,35 +319,35 @@
                     <div>
                         <div class="img"><img src="https://image.ibb.co/cNP817/pexels_photo_220453.jpg" alt=""></div>
                         <h2>Mr. Lorem Ipsum</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
+                        <p  class="standard">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
                     </div>
 
                     <div>
                         <div class="img"><img src="https://image.ibb.co/iN3qES/pexels_photo_324658.jpg" alt=""></div>
                         <h2>Lorem Ipsum</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
+                        <p  class="standard">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
                     </div>
 
                     <div>
                         <div class="img"><img src="https://image.ibb.co/kL6AES/Top_SA_Nicky_Oppenheimer.jpg" alt=""></div>
                         <h2>Lorem De Ipsum</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
+                        <p  class="standard">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
                     </div>
 
                     <div>
                         <div class="img"><img src="https://image.ibb.co/gUPag7/image.jpg" alt=""></div>
                         <h2>Ms. Lorem R. Ipsum</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
+                        <p  class="standard">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
                     </div>
 
                 </div>
 
-                <ul id="testim-dots" class="testimonials__dots">
-                    <li class="testimonials__dots--standard testimonials__dots--active"></li><!--
-                    --><li class="testimonials__dots--standard"></li><!--
-                    --><li class="testimonials__dots--standard"></li><!--
-                    --><li class="testimonials__dots--standard"></li><!--
-                    --><li class="testimonials__dots--standard"></li>
+                <ul id="testim-dots" class="dots">
+                    <li class="dot active"></li>
+                   	<li class="dot"></li>
+                    <li class="dot"></li>
+                    <li class="dot"></li>
+                    <li class="dot"></li>
                 </ul>
 
             </div>
@@ -308,7 +374,7 @@
 
 </section>
 
-
+<script type="text/javascript" src="/temp/scripts/App.js"></script>
 <script src="https://use.fontawesome.com/1744f3f671.js"></script>
 
 

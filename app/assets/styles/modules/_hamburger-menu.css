@@ -1,0 +1,169 @@
+.site-header {
+  z-index: 999;
+  /*HAMBURGER MENU*/
+
+  &__hamburger-menu {
+    display: flex;
+    height: 32px;
+    width: 40px;
+    cursor: pointer;
+    z-index: 100;
+    transition: opacity .25s ease;
+    position: relative;
+    flex: 1;
+    z-index: 9999;
+
+    @mixin atMedium {
+
+    }
+
+    @mixin atLarge {
+      
+    }
+
+    &:hover {
+      opacity: .7;
+    }
+
+    &.active {
+      .top {
+        transform: translateY(14px) translateX(0) rotate(45deg);
+        background: #FFF;
+      }
+
+      .middle {
+        opacity: 0;
+        background: #FFF;
+      }
+
+      .bottom {
+        transform: translateY(-14px) translateX(0) rotate(-45deg);
+        background: #FFF;
+      }
+    } 
+
+
+    & span {
+      background: $mainBlue;
+      border: none;
+      height: 2px;
+      width: 40px;
+      position: absolute;
+      left: 0; 
+      right: 0; 
+      margin-left: auto; 
+      margin-right: auto;
+      transition: all .35s ease;
+      cursor: pointer;
+
+      &:nth-of-type(2) {
+        top: 14px;
+      }
+
+      &:nth-of-type(3) {
+        top: 28px;
+      }
+    }
+  }
+
+  /*OVERLAY MENU*/
+  
+  &__overlay {
+    position: fixed;
+    background: $mainBlue;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .35s, visibility .35s, height .35s;
+    overflow: hidden;
+    z-index: 998;
+
+    &.open {
+      opacity: .9;
+      visibility: visible;
+      height: 100%;
+
+    nav {
+      position: relative;
+      height: 70%;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 30px;
+      text-align: center;
+    }
+
+    li {
+        animation: fadeInRight .5s ease forwards;
+        animation-delay: .35s;
+      }
+      li:nth-of-type(2) {
+        animation-delay: .4s;
+      }
+      li:nth-of-type(3) {
+        animation-delay: .45s;
+      }
+      li:nth-of-type(4) {
+        animation-delay: .50s;
+      }
+      li:nth-of-type(5) {
+        animation-delay: .55s;
+      }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 50px auto 0 auto;
+      display: inline-block;
+      position: relative;
+      height: 60%;
+
+      li {
+        display: block;
+        height: 25%;
+        height: calc(100% / 4);
+        min-height: 50px;
+        position: relative;
+        opacity: 0;
+
+        a {
+          display: block;
+          position: relative;
+          color: #FFF;
+          text-decoration: none;
+          overflow: hidden;
+        }
+
+        a:hover:after, a:focus:after, a:active:after {
+          width: 100%;
+        }
+
+        a:after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          width: 0%;
+          transform: translateX(-50%);
+          height: 3px;
+          background: #FFF;
+          transition: .35s;
+        }
+      }
+    }
+  }
+}
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}

@@ -1,17 +1,57 @@
+
+
 .large-hero {
     height:100vh;
     width: 100vw;
     margin: 0 auto;
     display:flex;
-    justify-content: left;
     align-items: center;
-    text-align: center;
-    color:white;
-    background: no-repeat bottom/cover;
-    background-image: url(../../assets/images/hero--large.jpg);
+    position: relative;
 
     @mixin atLarge {
         width: 80%;
+    }
+
+    .slide { 
+        opacity: 0;
+        z-index: -1;
+ 
+        &.show {
+            opacity: 1;
+            z-index: 1;
+        }
+    }
+
+    &--section {
+        height:100vh;
+        width: 100vw;
+        margin: 0 auto;
+        display:flex;
+        justify-content: left;
+        align-items: center;
+        text-align: center;
+        color:white;
+        position: absolute;
+        transition: all 800ms ease;
+
+        &--bg1 {
+            background: no-repeat bottom/cover;
+            background-image: url(../../assets/images/hero--large.jpg); 
+        }
+
+        &--bg2 {
+            background: no-repeat bottom/cover;
+            background-image: url(../../assets/images/adult.jpg); 
+        }
+
+        &--bg3 {
+            background: no-repeat bottom/cover;
+            background-image: url(../../assets/images/hero--large.jpg);   
+        }
+
+        @mixin atLarge {
+            width: 100%;
+        }
     }
 
    &__image {
@@ -63,6 +103,43 @@
             font-size: 4.8rem;
             line-height: 5.6rem;
             margin: 20px 0;
+        }
+    }
+
+    &__dots {
+        margin: 0 auto;
+        padding: 20px;
+        padding-inline-start: 0;
+        z-index: 3333;
+        height: 12px;
+        position: relative;
+        margin: 0 auto;
+        top: 50%;
+        transform: translateY(-100%);
+        z-index: 1;
+
+        &--standard {
+            list-style-type: none;
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            border: 1px solid #fff;
+            margin: 0 10px;
+            cursor: pointer;  
+            transition: all .5s ease-in-out;
+            position: relative;
+
+            &:hover {
+                background: $mainOrange;
+                border-color: $mainOrange;
+            }
+        }
+
+        &--active {
+            background: $mainOrange;
+            border: none;
+            animation: testim-scale .5s ease-in-out forwards;
         }
     }
     

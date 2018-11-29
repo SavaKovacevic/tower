@@ -30,6 +30,7 @@ h1 {
 h2 {
 	font-family: 'Proxima Nova Lt', Georgia, sans-serif;
 	font-size: 1.2rem;
+	margin-top: 0;
 
 	@mixin atSmall {
 		font-size: 1.5rem;

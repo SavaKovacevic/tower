@@ -4,18 +4,21 @@
     	display: inline-block;
     	border-bottom: 1px solid white;
     	object-fit: contain;
+        padding: 50px 0;
 
     	@mixin atMedium {
     		width: 32%;
     		border-bottom: 0;
+            padding: 0 0 100px 0;
         }
 
         @mixin atLarge {
     		width: 33%;
-
         }
 
-
+        & a {
+            z-index: 1;
+        }
 
         img {
 		    max-width: 100%;
@@ -24,6 +27,7 @@
         	@mixin atMedium {
         		max-width: 80%;
 		    	height: auto;
+                margin-top: -50px;
         	}
 
         	@mixin atLarger {

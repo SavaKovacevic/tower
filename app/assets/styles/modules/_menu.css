@@ -1,53 +1,225 @@
-.menu {
-        height: 134px;
-        width: 80rem;
-        margin: 0 auto;
-        line-height: 134px;
-        vertical-align: middle;
-        position: fixed;
+.site-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
 
-        &__logo {
-        	position: relative;
-        	height: 134px;
+    &__logo {
+        flex: 3;
+        text-align: center;
+        padding-left: 50px;
 
-        	img {
-	        	position: absolute;
-	        	top: 0;
-	        	bottom: 0;
-	        	margin: auto;
-	        }
+        
+        @mixin atMedium {
+            float: none;
+            flex: 5;
         }
-	}
 
-#menu {
-    display: none;
+        @mixin atMedium2 {
+            float: none;
+            flex: 4;
+        }
 
-    @mixin atLarge {
-    	height: 100vh;
-    	width: 10%;
-    	background-color: $mainGrey;
-    	position: fixed;
-    	left: 0;
-    	display: block;
+        @mixin atLarge {
+            flex: 4;
+            text-align: left;
+            padding-left: 50px;
+        }
 
-    	.menu__social {
-    		height: 100vh;
-    		width: auto;
-    		text-align: right;
-    		vertical-align: bottom;
-    	}
+        img {
+            width: 100px;
+            height: auto;
 
-    	.menu__facebook {
-    		transform: rotate(-90deg);
-    	}
+            @mixin atMedium {
+                width: 120px;
+                height: auto;
+            }
 
-	    .menu__instagram {
-	    	transform: rotate(-90deg);
-	    }
+            @mixin atLarge {
+                width: 154px;
+                height: auto;
+            }
+        }
+    }
+
+    &__info {
+        display: none;
+
+        @mixin atMedium {
+            display: flex;
+            flex: 4;
+        }
+
+        @mixin atMedium2 {
+            display: flex;
+            flex: 6;
+        }
+
+        @mixin atLarge {
+            flex: 4;
+        }
+
+        &--icon-background {
+            background: no-repeat;
+        }
+
+        &--adress {
+            text-decoration: none;
+            flex: 1;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:link, &:visited, &:active {
+                color: $mainBlue;
+            }
+
+            @mixin atMedium2 {
+                flex: 2;
+            }
+
+            &:hover {
+                color: $mainOrange;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+
+        &--location {
+            display: none;
+
+            @mixin atMedium2 {
+                margin-left: 10px;
+                display: block;
+            }
+        }
+
+        &--phone {
+            text-decoration: none;
+            flex: 1;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:link, &:visited, &:active {
+                color: $mainBlue;
+            }
+
+            @mixin atMedium2 {
+                flex: 2;
+            }
+
+            &:hover {
+                color: $mainOrange;
+                transition: all 0.3s ease-in-out;
+            }
+
+            a {
+                display: block;
+            }
+        }
+
+        &--number {
+            display: none;
+            
+            @mixin atMedium2 {
+                margin-left: 10px;
+                display: block;
+            }
+        }
+
+        &--button {
+            flex: 2;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            a {
+                text-decoration: none;
+            }
+        }   
+    }
+
+    .right-helper {
+        flex: 1;
+
+        @mixin atMedium {
+            flex: 0;
+        }
+
+        @mixin atLarge {
+            flex: 1;
+        }
     }
 }
 
-#right_bar {
+.social {
+    display: none;
+    
+    @mixin atLarge {
+        transform: rotate(-90deg);
+        position: fixed;
+        height: 10vw;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        transform-origin: 30px 30px;
+        z-index: 1;
+
+        &__text {
+            display: none;
+                
+            @mixin atMedium2 {
+                margin-left: 10px;
+                display: block;
+                transition: all 0.2s linear;
+            }
+        }
+    }
+    
+    &__net {
+        text-decoration: none;
+        flex: 1;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover span {
+            color: $mainOrange;
+            transition: all 0.2s linear;
+            }
+
+        &:link, &:visited, &:active {
+            color: $mainBlue;
+            }
+
+        &--margin {
+            margin-left: 50px;
+            }
+        }
+    }   
+
+.left-side-line {
+    display: none;
+
+    @mixin atLarge {
+        height: 100vh;
+        width: 10%;
+        background-color: $mainGrey;
+        position: fixed;
+        left: 0;
+        display: block;
+    }
+}
+
+.right-side-line {
     display: none;
 
     @mixin atLarge {
@@ -59,3 +231,4 @@
     	display: block;
     }
 }
+
