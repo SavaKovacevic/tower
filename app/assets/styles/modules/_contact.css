@@ -1,0 +1,111 @@
+.contact-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  transform: translateZ(0);
+}
+.contact {
+  form {
+    margin: 0 auto;
+    width: 350px;
+    height: 500px;
+    box-shadow: 0 3px 36px 0 rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    transition: .3s;
+
+  }
+
+  h1 {
+    margin: 0;
+    padding: 8px;
+    color: $mainBlue;
+    text-align: center;
+      
+    span {
+      display: block;
+      width: 26px; 
+      height: 26px;
+      border-radius: 50%;
+      position: absolute;
+      top: 7px;
+      right: 7px;
+      cursor: pointer;
+      transition: .2s;    
+
+      &:hover {
+        background-color: rgba($mainOrange, .2);     }
+    }
+  }
+
+  .group {
+    width: 250px;
+    margin: auto;
+    position: relative;
+  }
+
+  label {
+    position: absolute;
+    top: 7px;
+    cursor: text;
+    transition: .2s;
+    color: $mainOrange;
+  }
+
+  input {
+    background: linear-gradient(to bottom, transparent 92%, $mainBlue 8%) no-repeat;
+    background-position: -300px 0;
+    background-size: 300px 100%;
+    display: block;
+    width: 250px;
+    padding: 5px 0;
+    margin-top: 30px;
+    border: none;
+    border-bottom: solid 1px $mainBlue;
+    font-size: 15px;
+    transition: all 0.3s;
+    
+    &:focus, &:valid {
+      background-position: 0 0;
+      outline: none;
+      
+      ~label {
+        color: transparent;
+        transition: all 0.3s;
+      }
+    }
+  }
+
+  textarea, textarea:focus {
+    width: 100%;
+    height: 230px;
+    padding: 9px;
+    margin-top: 30px;
+    border: 1px solid $mainBlue;
+    outline: none;
+    resize: none;
+    &:focus, &:valid {
+      padding: 7px;
+      border: 3px solid $mainBlue;
+       
+      ~label {
+        top: 12px;
+        left: 0;
+        color: $mainBlue;
+
+      }
+    }
+      
+    ~label {
+      top: 35px;
+      left: 7px;   
+    }
+  }
+
+  ::selection {
+    background: $mainBlue;
+    color: white;
+  }
+
+}

@@ -5,8 +5,12 @@
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    max-width: 550px;
+    max-width: 330px;
     height: 80px;
+
+    @mixin atMedium {
+      max-width: 550px;
+    }
 
     input {
       @include placeholder {
@@ -55,7 +59,7 @@
       position: absolute;
       right: 0;
       top: 0;
-      width: 120px;
+      width: 80px;
       height: 100%;
       border: 0;
       border-radius: 4px;
@@ -66,6 +70,10 @@
       opacity: 0;
       outline: none;
       transition: opacity 0.35s ease-out, width 0.5s ease-out, background 0.25s ease-out;
+
+      @mixin atMedium {
+        width: 120px;
+      }
     }
 
     button.is-active {

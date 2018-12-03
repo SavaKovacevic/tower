@@ -13,16 +13,28 @@
 	&__info {
 		text-align: center;
 		padding: 20px;
+
+    span {
+      display: block;
+    }
 		
 		@mixin atMedium2 {
 			text-align: left;
 			display: inline-block;
 			width: 41%;
+
+      span {
+        margin-bottom: 10px;
+      }
 		}
 	}
 
 	&__newsletter {
 		text-align: center;
+
+    h2 {
+      margin-bottom: 10px;
+    }
 		
 		@mixin atMedium2 {
 			display: inline-block;

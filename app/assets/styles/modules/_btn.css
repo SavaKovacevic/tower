@@ -78,6 +78,11 @@
             }
         }
 
+    &--width {
+        width: 100%;
+        margin-top: 10px;
+    }
+
     &--white {
         border: 1px solid white;
         color: white;

@@ -2,17 +2,22 @@
 Instead edit gulp/templates/sprite*/
 
 	.icon {
-		background-image: url('/assets/images/sprites/sprite-80adc818.svg');
+		background-image: url('/assets/images/sprites/sprite-64a7ad3c.svg');
 		}
 	.icon--facebook {
 		width: 14px;
 		height: 28px;
 		background-position: 0 0;
 	}
+	.icon--germany {
+		width: 28px;
+		height: 18.3px;
+		background-position: 20.58823529411765% 0;
+	}
 	.icon--instagram {
 		width: 28px;
 		height: 28px;
-		background-position: 35% 0;
+		background-position: 61.76470588235294% 0;
 	}
 	.icon--phone {
 		width: 26px;
@@ -22,5 +27,10 @@ Instead edit gulp/templates/sprite*/
 	.icon--placeholder {
 		width: 18.2px;
 		height: 26px;
-		background-position: 0 100%;
+		background-position: 0 98.51063829787235%;
+	}
+	.icon--united-kingdom {
+		width: 28px;
+		height: 18.3px;
+		background-position: 0 51.18829981718464%;
 	}

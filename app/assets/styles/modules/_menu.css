@@ -7,16 +7,38 @@
     align-items: center;
     justify-content: center;
     padding: 20px 0;
+    transition: all .3s ease-out;
+
+    &--background {
+        background-color: #fff;
+
+        @mixin atMedium {
+            padding: 0;
+        }
+    }
 
     &__logo {
         flex: 3;
         text-align: center;
         padding-left: 50px;
+        transition: transform .3s ease-out;
 
+        .site-header--background & {
+            @mixin atMedium {
+            transform: scale(.8);
+            transform-origin: 0;
+            }
+
+            @mixin atLarge {
+            transform: scale(.7);
+            transform-origin: 0;
+            }
+        }
         
         @mixin atMedium {
             float: none;
             flex: 5;
+            text-align: left;
         }
 
         @mixin atMedium2 {
@@ -75,6 +97,10 @@
             align-items: center;
             justify-content: center;
 
+            &:hover pop-area{
+                opacity: 1
+            }
+
             &:link, &:visited, &:active {
                 color: $mainBlue;
             }
@@ -84,7 +110,6 @@
             }
 
             &:hover {
-                color: $mainOrange;
                 transition: all 0.3s ease-in-out;
             }
         }
@@ -106,6 +131,11 @@
             align-items: center;
             justify-content: center;
 
+            &:hover pop-area{
+                opacity: 1
+            }
+            
+
             &:link, &:visited, &:active {
                 color: $mainBlue;
             }
@@ -115,7 +145,6 @@
             }
 
             &:hover {
-                color: $mainOrange;
                 transition: all 0.3s ease-in-out;
             }
 
@@ -131,6 +160,37 @@
                 margin-left: 10px;
                 display: block;
             }
+        }
+
+        & pop-area{
+            display: flex;
+            align-items: center;
+            align-content: center;
+            position: absolute;
+            width: 8rem;
+            height: 2.5rem;
+            top: 100px;
+            padding: 5px 10px;
+            font-size: 1rem;
+            background-color: $mainBlue;
+            color: #fff;
+            opacity: 0;
+            transition: all .3s ease-in-out;
+        }
+
+        & pop-area span{
+            width:100%;
+            text-align: center;
+        }
+
+        & pop-area:before{
+            content: '';
+            border-color: $mainBlue transparent;
+            border-style: solid;
+            border-width: 0px 14px 14px;
+            position: absolute;
+            top: -14px;
+            left: calc(50% - 12px);
         }
 
         &--button {
@@ -166,7 +226,7 @@
         transform: rotate(-90deg);
         position: fixed;
         height: 10vw;
-        bottom: 0;
+        bottom: -50px;
         left: 0;
         display: flex;
         transform-origin: 30px 30px;
@@ -176,9 +236,11 @@
             display: none;
                 
             @mixin atMedium2 {
-                margin-left: 10px;
+                margin-left: 5px;
                 display: block;
                 transition: all 0.2s linear;
+                text-align: left;
+                line-height: .8rem;
             }
         }
     }
@@ -201,10 +263,15 @@
             }
 
         &--margin {
+            margin-left: 20px;
+            }
+
+        &--margin-double {
             margin-left: 50px;
             }
         }
     }   
+
 
 .left-side-line {
     display: none;

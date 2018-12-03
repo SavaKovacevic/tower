@@ -1,9 +1,22 @@
 import MobileMenu from './modules/MobileMenu';
 import HeaderSlider from './modules/HeaderSlider';
-import NumberCounter from './modules/NumberCounter';
 import TestimonialsSlider from './modules/TestimonialsSlider';
+import RevealOnScroll from './modules/RevealOnScroll';
+import $ from 'jquery';
+import StickyHeader from './modules/StickyHeader';
+import NumberCounter from './modules/NumberCounter';
 
-var mobileMenu = new MobileMenu();
+var mobileMenu = new MobileMenu('#hamburger-menu-toggle');
+var stickyHeader = new StickyHeader();
 var headerSlider = new HeaderSlider();
-var numberCounter = new NumberCounter();
 var testimonialsSlider = new TestimonialsSlider();
+new RevealOnScroll($('.welcome'), '85%');
+new RevealOnScroll($('.whyus'), '85%');
+new NumberCounter($('.whyus__infocount'), '100%');
+new RevealOnScroll($('.literature-logos'), '85%');
+new RevealOnScroll($('.courses'), '85%');
+new RevealOnScroll($('.accreditation'), '85%');
+new RevealOnScroll($('.services'), '85%');
+new RevealOnScroll($('.test'), '85%');
+new RevealOnScroll($('.testimonials'), '85%');
+new RevealOnScroll($('.footer'), '85%');
