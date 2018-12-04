@@ -1280,46 +1280,6 @@ h2 {
         transition: all 800ms ease;
     }
 
-.large-hero--section--bg1 {
-            background: no-repeat bottom/cover;
-            background-image: url(../../assets/images/hero--kid.jpg); 
-        }
-
-.large-hero--section--bg2 {
-            background: no-repeat bottom/cover;
-            background-image: url(../../assets/images/hero--teenage.jpg); 
-        }
-
-.large-hero--section--bg3 {
-            background: no-repeat bottom/cover;
-            background-image: url(../../assets/images/hero--adult.jpg);   
-        }
-
-.large-hero--section--berlin {
-            background: no-repeat bottom/cover;
-            background-image: url(../../assets/images/berlin.jpg);
-        }
-
-.large-hero--section--london {
-            background: no-repeat bottom/cover;
-            background-image: url(../../assets/images/london.jpg);
-        }
-
-.large-hero--section--translate {
-            background: no-repeat bottom/cover;
-            background-image: url(../../assets/images/translate.jpg);
-        }
-
-.large-hero--section--exam {
-            background: no-repeat bottom/cover;
-            background-image: url(../../assets/images/exam.jpg);
-        }
-
-/*
-        conversation.jpg
-exam.jpg
-translate.jpg*/
-
 @media (min-width: 1200px) {
 
 .large-hero--section {
@@ -1773,20 +1733,20 @@ translate.jpg*/
         }
 	}
 
-.services__exams {
+.services__exams.lazyloaded {
     	background: no-repeat bottom/cover;
     	background-image: linear-gradient(rgba(0,58,97, 0.5), rgba(0,58,97, 0.5)), url(../../assets/images/exams--bg.jpg);
-    }
+        }
 
-.services__conversation {
+.services__conversation.lazyloaded {
     	background: no-repeat bottom/cover;
     	background-image: linear-gradient(rgba(0,58,97, 0.5), rgba(0,58,97, 0.5)), url(../../assets/images/coversation--bg.jpg);
-    }
+        }
 
-.services__translate {
+.services__translate.lazyloaded {
     	background: no-repeat bottom/cover;
     	background-image: linear-gradient(rgba(0,58,97, 0.5), rgba(0,58,97, 0.5)), url(../../assets/images/translate--bg.jpg);
-    }
+        }
 
 .test {
   padding: 100px 0;
@@ -2350,43 +2310,47 @@ translate.jpg*/
 Instead edit gulp/templates/sprite*/
 
 .icon {
-		background-image: url('/assets/images/sprites/sprite-64a7ad3c.svg');
+		background-image: url('/assets/images/sprites/sprite-61ef247b.svg');
+		}
+
+.no-svg .icon {
+		background-image: url('/assets/images/sprites/sprite-61ef247b.png');
 		}
 
 .icon--facebook {
-		width: 14px;
-		height: 28px;
+		width: 16px;
+		height: 30px;
 		background-position: 0 0;
 	}
 
 .icon--germany {
-		width: 28px;
-		height: 18.3px;
-		background-position: 20.58823529411765% 0;
+		width: 30px;
+		height: 20.3px;
+		background-position: 21.62162162162162% 0;
 	}
 
 .icon--instagram {
-		width: 28px;
-		height: 28px;
-		background-position: 61.76470588235294% 0;
+		width: 30px;
+		height: 30px;
+		background-position: 62.16216216216216% 0;
 	}
 
 .icon--phone {
-		width: 26px;
-		height: 26px;
+		width: 28px;
+		height: 28px;
 		background-position: 100% 0;
 	}
 
 .icon--placeholder {
-		width: 18.2px;
-		height: 26px;
-		background-position: 0 98.51063829787235%;
+		width: 20.2px;
+		height: 28px;
+		background-position: 0 98.62745098039215%;
 	}
 
 .icon--united-kingdom {
-		width: 28px;
-		height: 18.3px;
-		background-position: 0 51.18829981718464%;
+		width: 30px;
+		height: 20.3px;
+		background-position: 0 51.10732538330494%;
 	}
 
 .reveal-item {
@@ -2599,3 +2563,38 @@ Instead edit gulp/templates/sprite*/
     background: #003a61;
     color: white;
   }
+
+.berlin{
+            background: no-repeat bottom/cover;
+            background-image: url(../../assets/images/berlin.jpg);
+        }
+
+.london {
+            background: no-repeat bottom/cover;
+            background-image: url(../../assets/images/london.jpg);
+        }
+
+.translate {
+            background: no-repeat bottom/cover;
+            background-image: url(../../assets/images/translate.jpg);
+        }
+
+.exam {
+            background: no-repeat bottom/cover;
+            background-image: url(../../assets/images/exam.jpg);
+        }
+
+.large-hero--section--bg1 {
+            background: no-repeat bottom/cover;
+            background-image: url(../../assets/images/hero--kid.jpg); 
+        }
+
+.large-hero--section--bg2 {
+            background: no-repeat bottom/cover;
+            background-image: url(../../assets/images/hero--teenage.jpg); 
+        }
+
+.large-hero--section--bg3 {
+            background: no-repeat bottom/cover;
+            background-image: url(../../assets/images/hero--adult.jpg);   
+        }

@@ -111,7 +111,7 @@ var headerSlider = new _modules_HeaderSlider__WEBPACK_IMPORTED_MODULE_1__["defau
 var testimonialsSlider = new _modules_TestimonialsSlider__WEBPACK_IMPORTED_MODULE_2__["default"]();
 new _modules_RevealOnScroll__WEBPACK_IMPORTED_MODULE_3__["default"](jquery__WEBPACK_IMPORTED_MODULE_4___default()('.welcome'), '85%');
 new _modules_RevealOnScroll__WEBPACK_IMPORTED_MODULE_3__["default"](jquery__WEBPACK_IMPORTED_MODULE_4___default()('.whyus'), '85%');
-new _modules_NumberCounter__WEBPACK_IMPORTED_MODULE_6__["default"](jquery__WEBPACK_IMPORTED_MODULE_4___default()('.whyus__infocount'), '100%');
+new _modules_NumberCounter__WEBPACK_IMPORTED_MODULE_6__["default"](jquery__WEBPACK_IMPORTED_MODULE_4___default()('.whyus__infocount'), '95%');
 new _modules_RevealOnScroll__WEBPACK_IMPORTED_MODULE_3__["default"](jquery__WEBPACK_IMPORTED_MODULE_4___default()('.literature-logos'), '85%');
 new _modules_RevealOnScroll__WEBPACK_IMPORTED_MODULE_3__["default"](jquery__WEBPACK_IMPORTED_MODULE_4___default()('.courses'), '85%');
 new _modules_RevealOnScroll__WEBPACK_IMPORTED_MODULE_3__["default"](jquery__WEBPACK_IMPORTED_MODULE_4___default()('.accreditation'), '85%');
@@ -11474,12 +11474,21 @@ function () {
   function StickyHeader() {
     _classCallCheck(this, StickyHeader);
 
+    this.lazyImages = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.lazyload');
     this.siteHeader = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.site-header');
     this.headerTriggerElement = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.large-hero__slogan');
     this.createHeaderWaypoint();
+    this.refreshWaypoints();
   }
 
   _createClass(StickyHeader, [{
+    key: "refreshWaypoints",
+    value: function refreshWaypoints() {
+      this.lazyImages.on('load', function () {
+        Waypoint.refreshAll();
+      });
+    }
+  }, {
     key: "createHeaderWaypoint",
     value: function createHeaderWaypoint() {
       var that = this;
@@ -11523,13 +11532,22 @@ function () {
   function NumberCounter(element, offset) {
     _classCallCheck(this, NumberCounter);
 
+    this.lazyImages = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.lazyload');
     this.itemsToReveal = element;
     this.offsetPercentage = offset;
     this.hideInitially();
     this.createWaypoints();
+    this.refreshWaypoints();
   }
 
   _createClass(NumberCounter, [{
+    key: "refreshWaypoints",
+    value: function refreshWaypoints() {
+      this.lazyImages.on('load', function () {
+        Waypoint.refreshAll();
+      });
+    }
+  }, {
     key: "hideInitially",
     value: function hideInitially() {
       this.itemsToReveal.addClass("reveal-item");
@@ -11562,6 +11580,7 @@ function () {
 
             if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(currentItem).hasClass("reveal-item--is-visible")) {
               that.numberCount();
+              this.destroy();
             }
           },
           offset: that.offsetPercentage

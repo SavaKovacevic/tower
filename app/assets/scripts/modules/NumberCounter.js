@@ -2,11 +2,19 @@ import $ from 'jquery';
 
 class NumberCounter {
 	constructor(element, offset) {
+        this.lazyImages = $('.lazyload');
 		this.itemsToReveal = element;
         this.offsetPercentage = offset;
         this.hideInitially();
         this.createWaypoints();
+        this.refreshWaypoints();
 	}
+
+    refreshWaypoints() {
+        this.lazyImages.on('load', function() {
+            Waypoint.refreshAll();
+        });
+    }
 
      hideInitially() {
        this.itemsToReveal.addClass("reveal-item");
@@ -35,7 +43,8 @@ class NumberCounter {
            handler: function() {
              $(currentItem).addClass("reveal-item--is-visible");
              if($(currentItem).hasClass("reveal-item--is-visible")){
-             that.numberCount();}
+             that.numberCount();
+             this.destroy()}
            },
            offset: that.offsetPercentage
          });

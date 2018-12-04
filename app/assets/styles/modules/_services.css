@@ -48,17 +48,23 @@
         } 
 
     &__exams {
+        &.lazyloaded {
     	background: no-repeat bottom/cover;
     	background-image: linear-gradient(rgba($mainBlue, 0.5), rgba($mainBlue, 0.5)), url(../../assets/images/exams--bg.jpg);
+        }
     }
 
     &__conversation {
+        &.lazyloaded {
     	background: no-repeat bottom/cover;
     	background-image: linear-gradient(rgba($mainBlue, 0.5), rgba($mainBlue, 0.5)), url(../../assets/images/coversation--bg.jpg);
+        }
     }
 
     &__translate {
+        &.lazyloaded {
     	background: no-repeat bottom/cover;
     	background-image: linear-gradient(rgba($mainBlue, 0.5), rgba($mainBlue, 0.5)), url(../../assets/images/translate--bg.jpg);
+        }
     }
 }

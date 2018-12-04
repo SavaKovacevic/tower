@@ -36,46 +36,6 @@
         position: absolute;
         transition: all 800ms ease;
 
-        &--bg1 {
-            background: no-repeat bottom/cover;
-            background-image: url(../../assets/images/hero--kid.jpg); 
-        }
-
-        &--bg2 {
-            background: no-repeat bottom/cover;
-            background-image: url(../../assets/images/hero--teenage.jpg); 
-        }
-
-        &--bg3 {
-            background: no-repeat bottom/cover;
-            background-image: url(../../assets/images/hero--adult.jpg);   
-        }
-
-        &--berlin {
-            background: no-repeat bottom/cover;
-            background-image: url(../../assets/images/berlin.jpg);
-        }
-
-        &--london {
-            background: no-repeat bottom/cover;
-            background-image: url(../../assets/images/london.jpg);
-        }
-
-        &--translate {
-            background: no-repeat bottom/cover;
-            background-image: url(../../assets/images/translate.jpg);
-        }
-
-        &--exam {
-            background: no-repeat bottom/cover;
-            background-image: url(../../assets/images/exam.jpg);
-        }
-
-
-/*
-        conversation.jpg
-exam.jpg
-translate.jpg*/
 
         @mixin atLarge {
             width: 100%;

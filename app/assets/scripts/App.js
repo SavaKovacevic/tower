@@ -12,7 +12,7 @@ var headerSlider = new HeaderSlider();
 var testimonialsSlider = new TestimonialsSlider();
 new RevealOnScroll($('.welcome'), '85%');
 new RevealOnScroll($('.whyus'), '85%');
-new NumberCounter($('.whyus__infocount'), '100%');
+new NumberCounter($('.whyus__infocount'), '95%');
 new RevealOnScroll($('.literature-logos'), '85%');
 new RevealOnScroll($('.courses'), '85%');
 new RevealOnScroll($('.accreditation'), '85%');

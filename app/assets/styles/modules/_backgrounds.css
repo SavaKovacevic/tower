@@ -1,0 +1,43 @@
+.berlin{
+            background: no-repeat bottom/cover;
+            background-image: url(../../assets/images/berlin.jpg);
+        }
+
+.london {
+            background: no-repeat bottom/cover;
+            background-image: url(../../assets/images/london.jpg);
+        }
+
+.translate {
+            background: no-repeat bottom/cover;
+            background-image: url(../../assets/images/translate.jpg);
+        }
+
+.exam {
+            background: no-repeat bottom/cover;
+            background-image: url(../../assets/images/exam.jpg);
+        }
+
+.large-hero {
+
+
+    &--section {
+
+
+        &--bg1 {
+            background: no-repeat bottom/cover;
+            background-image: url(../../assets/images/hero--kid.jpg); 
+        }
+
+        &--bg2 {
+            background: no-repeat bottom/cover;
+            background-image: url(../../assets/images/hero--teenage.jpg); 
+        }
+
+        &--bg3 {
+            background: no-repeat bottom/cover;
+            background-image: url(../../assets/images/hero--adult.jpg);   
+        }
+
+    }
+}
