@@ -982,6 +982,10 @@ h2 {
             transition: all .3s ease-in-out;
         }
 
+.site-header--background .site-header__info pop-area {
+                top: 75px;
+            }
+
 .site-header__info pop-area span{
             width:100%;
             text-align: center;
@@ -1788,7 +1792,7 @@ h2 {
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    max-width: 330px;
+    max-width: 300px;
     height: 80px;
 
 
@@ -2206,6 +2210,19 @@ h2 {
 
 .footer__logo {
 		text-align: center;
+	}
+
+.footer__logo img {
+      width: 100px;
+      height: auto;
+    }
+
+@media (min-width: 1000px) {
+
+.footer__logo img {
+      width: 130px;
+      height: auto
+    }
 	}
 
 @media (min-width: 1000px) {

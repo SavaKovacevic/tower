@@ -3,6 +3,16 @@
 
 	&__logo {
 		text-align: center;
+    
+    & img {
+      width: 100px;
+      height: auto;
+
+      @mixin atMedium2 {
+      width: 130px;
+      height: auto;
+      }
+    }
 		
 		@mixin atMedium2 {
 			display: inline-block;
