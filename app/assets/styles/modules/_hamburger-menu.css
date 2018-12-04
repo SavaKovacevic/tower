@@ -73,7 +73,7 @@
     display: flex;
     justify-content: center;
     max-width: 300px;
-    margin: 50px auto 0 auto;
+    margin: 30px auto 0 auto;
 
       &--net {
         text-decoration: none;
@@ -116,8 +116,18 @@
     opacity: 0;
     visibility: hidden;
     transition: opacity .35s, visibility .35s, height .35s;
-    overflow: hidden;
+    overflow-x: hidden;
     z-index: 998;
+
+    & img {
+      width: 100px;
+      height: auto;
+
+      @mixin atMedium {
+        width: auto;
+        height: auto;
+      }
+    }
 
     &.open {
       opacity: .9;
@@ -154,7 +164,7 @@
     ul {
       list-style: none;
       padding: 0;
-      margin: 50px auto 0 auto;
+      margin: 30px auto 0 auto;
       display: inline-block;
       position: relative;
       height: 40%;

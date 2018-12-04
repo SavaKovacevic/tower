@@ -11,6 +11,7 @@
 
     &--background {
         background-color: #fff;
+        padding: 5px 0;
 
         @mixin atMedium {
             padding: 0;
@@ -20,8 +21,8 @@
     &__logo {
         flex: 3;
         text-align: center;
-        padding-left: 50px;
         transition: transform .3s ease-out;
+
 
         .site-header--background & {
             @mixin atMedium {
@@ -39,6 +40,7 @@
             float: none;
             flex: 5;
             text-align: left;
+            padding-left: 50px;
         }
 
         @mixin atMedium2 {
@@ -53,7 +55,7 @@
         }
 
         img {
-            width: 100px;
+            width: 80px;
             height: auto;
 
             @mixin atMedium {

@@ -11592,30 +11592,7 @@ function () {
   return NumberCounter;
 }();
 
-/* harmony default export */ __webpack_exports__["default"] = (NumberCounter); // class RevealOnScroll {
-//  constructor(element, offset) {
-//    this.itemsToReveal = element;
-//    this.offsetPercentage = offset;
-//    this.hideInitially();
-//    this.createWaypoints();
-//  }
-//  hideInitially() {
-//    this.itemsToReveal.addClass("reveal-item");
-//  }
-//  createWaypoints() {
-//     var that = this;
-//    this.itemsToReveal.each(function() {
-//      var currentItem = this;
-//      new Waypoint({
-//        element: currentItem,
-//        handler: function() {
-//          $(currentItem).addClass("reveal-item--is-visible");
-//        },
-//        offset: that.offsetPercentage
-//      });
-//    });
-//  }
-// }
+/* harmony default export */ __webpack_exports__["default"] = (NumberCounter);
 
 /***/ })
 /******/ ]);

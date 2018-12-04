@@ -1,5 +1,4 @@
 .whyus {
-	transform: rotateX(180deg);
     padding: 50px 0;
 
 	@mixin atMedium2 {
@@ -11,14 +10,12 @@
     }
 
 	&__image {
-		transform: rotateX(180deg);
     	max-width: 640px;
 		margin: 0 auto;
 		text-align: center;
 		position: relative;
 
 		@mixin atMedium2 {
-			transform: rotateX(180deg);
 			display: inline-block;
         	text-align: center;
         	width: 50%;
@@ -26,41 +23,21 @@
 
         img {
         	width: 60%;
-        	margin-top: -80px;
-
-
-        	/*@mixin atMedium2 {
-
-		}
-
-        	@mixin atLarger {
-        		width: 80%;
-        	}*/
+        	margin-top: -120px;
         }
     }
 
     &__info {
-    	transform: rotateX(180deg);
 		width: 100%;
 		margin: 0 auto;
 		text-align: center;
 		position: relative;
 		max-width: 640px;
-
-		/*@mixin atMedium2 {
-			transform: rotateX(180deg);
-			width: 49%;
-        	margin-top: 50px;
-      	 	
-       		text-align: center;
-       		text-align: left;
-       		display: inline-block;
-		}*/
     }
 
     &__infocount {
     	.counter {
-    		width: 33%;
+    		width: 32%;
     		float: left;
     		margin-bottom: 50px;
     		text-align: center;
@@ -81,6 +58,7 @@
     			color: $mainBlue;
     			font-size: .rem;
     			font-family: 'Proxima Nova Lt', Georgia, sans-serif;
+                overflow-x: hidden;
 
                 @mixin atMedium {
                     font-size: 1.125rem;

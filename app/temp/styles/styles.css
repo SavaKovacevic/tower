@@ -583,7 +583,7 @@ h2 {
     display: flex;
     justify-content: center;
     max-width: 300px;
-    margin: 50px auto 0 auto;
+    margin: 30px auto 0 auto;
     }
 
 .site-header .overlay__social--net {
@@ -626,9 +626,22 @@ h2 {
     opacity: 0;
     visibility: hidden;
     transition: opacity .35s, visibility .35s, height .35s;
-    overflow: hidden;
+    overflow-x: hidden;
     z-index: 998;
   }
+
+.site-header__overlay img {
+      width: 100px;
+      height: auto;
+    }
+
+@media (min-width: 800px) {
+
+.site-header__overlay img {
+        width: auto;
+        height: auto
+    }
+	}
 
 .site-header__overlay.open {
       opacity: .9;
@@ -676,7 +689,7 @@ h2 {
 .site-header__overlay ul {
       list-style: none;
       padding: 0;
-      margin: 50px auto 0 auto;
+      margin: 30px auto 0 auto;
       display: inline-block;
       position: relative;
       height: 40%;
@@ -752,6 +765,7 @@ h2 {
 
 .site-header--background {
         background-color: #fff;
+        padding: 5px 0;
     }
 
 @media (min-width: 800px) {
@@ -764,7 +778,6 @@ h2 {
 .site-header__logo {
         flex: 3;
         text-align: center;
-        padding-left: 50px;
         transition: -webkit-transform .3s ease-out;
         transition: transform .3s ease-out;
         transition: transform .3s ease-out, -webkit-transform .3s ease-out;
@@ -795,7 +808,8 @@ h2 {
 .site-header__logo {
             float: none;
             flex: 5;
-            text-align: left
+            text-align: left;
+            padding-left: 50px
     }
 	}
 
@@ -817,7 +831,7 @@ h2 {
 	}
 
 .site-header__logo img {
-            width: 100px;
+            width: 80px;
             height: auto;
         }
 
@@ -1140,8 +1154,8 @@ h2 {
 }
 
 .btn {
-    height: 2rem;
-    width: 7rem;
+    height: 3rem;
+    width: 8rem;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -1151,7 +1165,7 @@ h2 {
     text-decoration: none;
     border: 1px solid #003a61;
     display: inline-block;
-    line-height: 2rem;
+    line-height: 3rem;
     transition: all 0.3s ease-in-out;
     position: relative;
     overflow: hidden;
@@ -1270,12 +1284,22 @@ h2 {
     display:flex;
     align-items: center;
     position: relative;
+    overflow: hidden;
     
 }
 
 .large-hero--background {
         background-color: #fff;
     }
+
+@media (min-width: 800px) {
+
+.large-hero {
+        height:100vh;
+        width: 100vw
+    
+}
+	}
 
 @media (min-width: 1200px) {
 
@@ -1288,11 +1312,13 @@ h2 {
 .large-hero .slide { 
         opacity: 0;
         z-index: -1;
+        overflow-x: hidden;
     }
 
 .large-hero .slide.show {
             opacity: 1;
             z-index: 1;
+            overflow-x: hidden;
         }
 
 .large-hero--section {
@@ -1342,11 +1368,11 @@ h2 {
     }
 
 .large-hero__slogan {
-        font-size: 1.3rem;
+        font-size: 1.6rem;
         font-family: 'Proxima Nova Bl', Georgia, sans-serif;
         text-align: left;
         text-shadow: 1px 2px 2px rgba(0,0,0,0.5);
-        line-height: 1.6rem;
+        line-height: 2rem;
         margin: 10px 0;
     }
 
@@ -1430,8 +1456,6 @@ h2 {
 	}
 
 .whyus {
-	-webkit-transform: rotateX(180deg);
-	        transform: rotateX(180deg);
     padding: 50px 0;
 }
 
@@ -1450,8 +1474,6 @@ h2 {
 	}
 
 .whyus__image {
-		-webkit-transform: rotateX(180deg);
-		        transform: rotateX(180deg);
     	max-width: 640px;
 		margin: 0 auto;
 		text-align: center;
@@ -1461,8 +1483,6 @@ h2 {
 @media (min-width: 1000px) {
 
 .whyus__image {
-			-webkit-transform: rotateX(180deg);
-			        transform: rotateX(180deg);
 			display: inline-block;
         	text-align: center;
         	width: 50%
@@ -1471,40 +1491,19 @@ h2 {
 
 .whyus__image img {
         	width: 60%;
-        	margin-top: -80px;
-
-
-        	/*@mixin atMedium2 {
-
-		}
-
-        	@mixin atLarger {
-        		width: 80%;
-        	}*/
+        	margin-top: -120px;
         }
 
 .whyus__info {
-    	-webkit-transform: rotateX(180deg);
-    	        transform: rotateX(180deg);
 		width: 100%;
 		margin: 0 auto;
 		text-align: center;
 		position: relative;
 		max-width: 640px;
-
-		/*@mixin atMedium2 {
-			transform: rotateX(180deg);
-			width: 49%;
-        	margin-top: 50px;
-      	 	
-       		text-align: center;
-       		text-align: left;
-       		display: inline-block;
-		}*/
     }
 
 .whyus__infocount .counter {
-    		width: 33%;
+    		width: 32%;
     		float: left;
     		margin-bottom: 50px;
     		text-align: center;
@@ -1529,6 +1528,7 @@ h2 {
     			color: #003a61;
     			font-size: .rem;
     			font-family: 'Proxima Nova Lt', Georgia, sans-serif;
+                overflow-x: hidden;
     		}
 
 @media (min-width: 800px) {
@@ -1545,6 +1545,7 @@ h2 {
     position: relative;
     text-align: center;
     margin-bottom: 50px;
+    overflow-x: hidden;
 }
 
 @media (min-width: 800px) {
