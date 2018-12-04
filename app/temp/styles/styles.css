@@ -1176,6 +1176,11 @@ h2 {
         margin: 0;
         }
 
+.btn--transition {
+
+        z-index: 1;
+    }
+
 .btn--transition:hover {
             background-color: transparent;
             color: #ecf0f1;
@@ -1312,13 +1317,11 @@ h2 {
 .large-hero .slide { 
         opacity: 0;
         z-index: -1;
-        overflow-x: hidden;
     }
 
 .large-hero .slide.show {
             opacity: 1;
             z-index: 1;
-            overflow-x: hidden;
         }
 
 .large-hero--section {
@@ -1368,7 +1371,7 @@ h2 {
     }
 
 .large-hero__slogan {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         font-family: 'Proxima Nova Bl', Georgia, sans-serif;
         text-align: left;
         text-shadow: 1px 2px 2px rgba(0,0,0,0.5);

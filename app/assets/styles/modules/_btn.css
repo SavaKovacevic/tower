@@ -23,6 +23,8 @@
 
     &--transition {
 
+        z-index: 1;
+
         &:hover {
             background-color: transparent;
             color: #ecf0f1;

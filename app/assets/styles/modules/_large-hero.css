@@ -23,12 +23,10 @@
     .slide { 
         opacity: 0;
         z-index: -1;
-        overflow-x: hidden;
  
         &.show {
             opacity: 1;
             z-index: 1;
-            overflow-x: hidden;
         }
     }
 
@@ -76,7 +74,7 @@
     }
 
     &__slogan {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         font-family: 'Proxima Nova Bl', Georgia, sans-serif;
         text-align: left;
         text-shadow: 1px 2px 2px rgba(0,0,0,0.5);
