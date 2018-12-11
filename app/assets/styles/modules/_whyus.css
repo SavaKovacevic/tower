@@ -35,6 +35,13 @@
 		max-width: 640px;
     }
 
+    p {
+        a, a:link, a:visited, a:active {
+                color: $mainOrange;
+                text-decoration: none;
+            }
+    }
+
     &__infocount {
     	.counter {
     		width: 32%;
@@ -43,12 +50,17 @@
     		text-align: center;
 
     		.number {
-    			margin-bottom: -10px;
+    			margin-bottom: -5px;
     			color: $mainBlue;
-    			font-size: 3rem;
+    			font-size: 2rem;
     			font-family: 'Proxima Nova Rg', Georgia, sans-serif;
 
                 @mixin atMedium {
+                    margin-bottom: -15px;
+                    font-size: 4rem;
+                }
+
+                @mixin atLarge {
                     margin-bottom: -20px;
                     font-size: 5rem;
                 }
@@ -56,9 +68,13 @@
 
     		.number-info {
     			color: $mainBlue;
-    			font-size: .rem;
+    			font-size: .8rem;
     			font-family: 'Proxima Nova Lt', Georgia, sans-serif;
-                overflow-x: hidden;
+                overflow: hidden;
+
+                @mixin atSmall {
+                    font-size: 1rem;
+                }
 
                 @mixin atMedium {
                     font-size: 1.125rem;

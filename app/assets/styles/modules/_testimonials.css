@@ -14,13 +14,12 @@
         position: absolute;
         color: #fff;
         cursor: pointer;
-        font-size: 2rem!important;
+        font-size: 1.5rem;
         top: 50%;
         transform: translateY(-50%);  
         transition: all .3s ease-in-out;
         padding: 5px;
         z-index: 1;
-        font-family: 'Font Awesome 5 Free'!important;
 
         &:before {
             cursor: pointer;
@@ -36,6 +35,10 @@
 
         &--right {
             right: 10px;
+        }
+
+        @mixin atMedium {
+            font-size: 2rem;
         }
     }
 
@@ -104,10 +107,14 @@
     margin: 15px 0;
 }
 .cont div p {
-    font-size: 1.15em;
+    font-size: 1;
     color: #fff;
     width: 80%;
     margin: auto;
+
+    @mixin atMedium {
+        font-size: 1.15rem;
+    }
 }
 .cont div.active .img img {          
     animation: testim-show .5s ease-in-out forwards;            

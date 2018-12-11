@@ -55,7 +55,7 @@
         }
 
         img {
-            width: 80px;
+            width: 100px;
             height: auto;
 
             @mixin atMedium {
@@ -214,6 +214,7 @@
 
     .right-helper {
         flex: 1;
+        z-index: 999;
 
         @mixin atMedium {
             flex: 0;
@@ -221,6 +222,27 @@
 
         @mixin atLarge {
             flex: 1;
+        }
+
+        &--phone {
+            text-decoration: none;
+            flex: 1;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @mixin atMedium {
+                display: none;
+            }
+
+            a {
+                display: block;
+
+                @mixin atMedium {
+                    display: none;
+                }
+            }
         }
     }
 }

@@ -35,13 +35,14 @@
 	<!-- MENU OVERLAY -->
 	<div class="site-header__overlay" id="overlay">
 		<nav class="site-header__overlay--menu">
-			<div class="site-header__overlay--logo"><a href="index.html"><img src="assets/images/logo--white.png" alt=""></a></div>
+			<div class="site-header__overlay--logo"><a href="index.html"><img src="assets/images/logo--white.svg" class="logo"></a></div>
 	    	<ul>
 				<li><a href="zasto-tower.html">Zašto Tower</a></li>
 	        	<li><a href="kursevi.html">Kursevi</a></li>
 	        	<li><a href="medjunarodni-ispiti.html">Međunarodni Ispiti</a></li>
 	        	<li><a href="prevodilacke-usluge.html">Prevodilačke Usluge</a></li>
 	        	<li><a href="kontakt.html">Kontakt</a></li>
+	        	<li><a href="upisi-kurs.html" class="orange-link">Upiši kurs</a></li>
 			</ul>
 
 			<div class="overlay__social">
@@ -57,12 +58,12 @@
 			</div>
 
 			<div class="overlay__social">
-				<a href="https://www.facebook.com/tower.skola/" target="_blank" class="overlay__social--net">
+				<a href="kurs-engleskog.html" target="_blank" class="overlay__social--net">
 					<span class="icon icon--united-kingdom"></span>
 					<span class="overlay__social--text">Kurs: <br>Engleski</span>
 				</a>
 
-				<a href="https://www.instagram.com/tower_skola_stranih_jezika/" target="_blank" class="overlay__social--net">
+				<a href="kurs-nemackog.html" target="_blank" class="overlay__social--net">
 					<span class="icon icon--germany"></span>
 					<span class="overlay__social--text">Kurs: <br>Nemački</span>
 				</a>
@@ -71,7 +72,7 @@
 	</div>
 	<!-- LOGO -->
 	<div class="site-header__logo">
-   		<a href="index.html"><img src="assets/images/logo.png" class="logo"></a>
+   		<a href="index.html"><img src="assets/images/logo.svg" class="logo"></a>
    	</div>
 	<!-- INFO -->
 	<div class="site-header__info">
@@ -99,7 +100,10 @@
 	   	</div>  	
    	</div>
 	<!-- FLEXBOX HELPER -->
-   	<div class="right-helper"></div>
+   	<div class="right-helper">
+   		<a href="tel:+381691163956" class="right-helper--phone">
+	   		<span class="icon icon--phone-orange site-header__info--icon-background"></span>
+	   	</a>
 </header>
 
 <!-- SOCIAL -->
@@ -125,11 +129,6 @@
 	</a>
 </div>
 
-<!-- FLAGS -->
-<div class="flags">
-	
-</div>
-
 <!-- SIDELINES -->
 <div class='left-side-line'>
 </div>
@@ -140,6 +139,7 @@
 <section id="large-hero" class="large-hero">
 	<div class="large-hero--section large-hero--section--bg1 slide slide1 show">
 	<div class="large-hero__text-content content-wrapper">
+		<p class="standard">Kursevi za osnovce</p>
 	    <h1 class="large-hero__slogan">
 	        UČINITE <br>SVET SVOG <br>DETETA BOLJIM
 	    </h1>
@@ -151,6 +151,7 @@
 
     <div class="large-hero--section large-hero--section--bg2 slide slide2">
 	<div class="large-hero__text-content content-wrapper">
+		<p class="standard">Kursevi za tinejdžere</p>
 	    <h1 class="large-hero__slogan">
 	        UVEK <br>SPREMNI ZA <br>BUDUĆNOST
 	    </h1>
@@ -162,6 +163,7 @@
 
     <div class="large-hero--section large-hero--section--bg3 slide slide3">
 	<div class="large-hero__text-content content-wrapper">
+		<p class="standard">Kursevi za odrasle</p>
 	    <h1 class="large-hero__slogan">
 	        UČENJE <br>NIKAD <br>NE PRESTAJE
 	    </h1>
@@ -175,7 +177,7 @@
                     <li class="large-hero__dots--standard large-hero__dots--active dot1"></li><!--
                     --><li class="large-hero__dots--standard dot2"></li><!--
                     --><li class="large-hero__dots--standard dot3"></li>
-        </ul>
+    </ul>
 </section>
 
 
@@ -202,42 +204,43 @@
 
 		<h1>ZAŠTO TOWER</h1>
 
-		<p class="standard">Više od 16 godina pomažemo polaznicima da svoj engleski ili nemački jezik usavrše, zahvaljujući čemu su postigli prestižan uspeh na međunarodnim ispitima</p>
+		<p class="standard">Više od 16 godina pomažemo polaznicima da svoj engleski ili nemački jezik usavrše, zahvaljujući čemu su postigli prestižan uspeh na <a href="medjunarodni-ispiti.html">međunarodnim ispitima</a>.</p>
 
 		<!-- COUNTER STATISTICS -->
 
  		<div class="whyus__infocount">
 			<div class="counter">
 				<div class="number count">16</div>
-				<div class="number-info">Godina postojanja</div>
+				<div class="number-info">Godina <br> postojanja</div>
 			</div>
 			<div class="counter">
 				<div class="number count">123</div>
-				<div class="number-info">Zadovoljnih učenika</div>
+				<div class="number-info">Zadovoljnih <br> učenika</div>
 			</div>
 			<div class="counter">
 				<div class="number count">50</div>
-				<div class="number-info">Još neka statistika</div>
+				<div class="number-info">Još neka <br> statistika</div>
 			</div>
 		</div>
 
 		<!-- BUTTON -->
-		<a href="#" class="btn btn--transition">
+		<a href="zasto-tower.html" class="btn btn--transition">
 	        	SAZNAJ VIŠE
 	    </a>
 	   
 
 	</div>
 </section>
-	
 
-<!-- LITERATURE LOGOS -->
 
-<section class="literature-logos">
-	<div class="literature-logos__logo national-geographic"><a href="https://ngl.cengage.com/" target="_blank"><img class="lazyload" data-src="assets/images/national-geographic.png" alt="national geographic logo"></a></div>
-	<div class="literature-logos__logo macmillan"><a href="http://macmillan.com/" target="_blank"><img src="assets/images/macmillan.png" alt="macmillan logo"></a></div>
-	<div class="literature-logos__logo pearson-longman"><a href="https://www.pearson.com/" target="_blank"><img class="lazyload" data-class="lazyload" data-src="assets/images/pearson-longman.png" alt="pearson-longman logo"></a></div>
-	<div class="literature-logos__logo oxford"><a href="http://global.oup.com/" target="_blank"><img class="lazyload" data-src="assets/images/oxford.png" alt="oxford university press logo"></a></div>
+<!-- ACCREDITATION	 -->
+
+<section class="accreditation section bg-white">
+
+	<a href="https://www.britishcouncil.org/" target="_blank"><img class="lazyload" data-src="assets/images/british-council-logo.jpg"></a>
+
+	<p class="standard content-wrapper">Kao akreditovani član Addvantage programa British Council-a do sada smo uspešno pripremili više od stotinu učenika za polaganje <a href="medjunarodni-ispiti.html">međunarodnih ispita</a> engleskog jezika.</p>
+
 </section>
 
 
@@ -252,7 +255,7 @@
 
 		<h2>KURSEVI ZA <br>OSNOVCE</h2>
 
-		<a href="#" class="btn btn--transition">SAZNAJ VIŠE</a>
+		<a href="kursevi-za-osnovce.html" class="btn btn--transition">SAZNAJ VIŠE</a>
 
 	</div>
 
@@ -263,7 +266,7 @@
 
 		<h2>KURSEVI ZA <br> TINEJDŽERE</h2>
 
-		<a href="#" class="btn btn--transition">SAZNAJ VIŠE</a>
+		<a href="kursevi-za-tinejdzere.html" class="btn btn--transition">SAZNAJ VIŠE</a>
 
 	</div>
 
@@ -274,16 +277,24 @@
 
 		<h2>KURSEVI ZA <br> ODRASLE</h2>
 
-		<a href="#" class="btn btn--transition">SAZNAJ VIŠE</a>
+		<a href="kursevi-za-odrasle.html" class="btn btn--transition">SAZNAJ VIŠE</a>
 
 	</div>
 
 </section>
 
-<section class="accreditation section bg-white">
+<!-- LITERATURE LOGOS -->
 
-	<a href="https://www.britishcouncil.org/" target="_blank"><img class="lazyload" data-src="assets/images/british-council-logo.jpg"></a>
+<div class="literature-intro section bg-white"><h1>UDŽBENICI</h1>
 
+	<p class="standard content-wrapper">Za naše polaznike pripremili smo udženike najprestižnijih svetskih izdavača.</p></div>
+
+<section class="literature-logos">
+
+	<div class="literature-logos__logo national-geographic"><a href="https://ngl.cengage.com/" target="_blank"><img class="lazyload" data-src="assets/images/national-geographic.png" alt="national geographic logo"></a></div>
+	<div class="literature-logos__logo macmillan"><a href="http://macmillan.com/" target="_blank"><img src="assets/images/macmillan.png" alt="macmillan logo"></a></div>
+	<div class="literature-logos__logo pearson-longman"><a href="https://www.pearson.com/" target="_blank"><img class="lazyload" data-class="lazyload" data-src="assets/images/pearson-longman.png" alt="pearson-longman logo"></a></div>
+	<div class="literature-logos__logo oxford"><a href="http://global.oup.com/" target="_blank"><img class="lazyload" data-src="assets/images/oxford.png" alt="oxford university press logo"></a></div>
 </section>
 
 <!-- SERVICES -->
@@ -297,18 +308,18 @@
 
 		<div class="services__info content-wrapper"><p class="service__info--content">CAMBRIDGE ENGLISH: FIRST (FCE); CAMBRIDGE ENGLISH: ADVANCED (CAE), CAMBRIDGE ENGLISH: PROFICIENCY (CPE); IELTS - International English Language Testing System; TOEFL - Test of English as a Foreign Language; SAT; GRE; CAMBRIDGE BEC</p></div>
 
-		<a href="#" class="btn btn--white btn--transition btn--transition--orange">SAZNAJ VIŠE</a>
+		<a href="medjunarodni-ispiti.html" class="btn btn--white btn--transition btn--transition--orange">SAZNAJ VIŠE</a>
 
 	</div>
 
 	<!-- COURSE 2 -->
 	<div class="services__service services__conversation lazyload">
 
-		<h2>KONVERZACIJSKI <br> KURS</h2>
+		<h2>KONVERZACIJSKI <br> KURS ENGLESKOG</h2>
 
 		<div class="services__info content-wrapper"><p class="service__info--content">TEME : film, kultura, umetnost, hrana i piće, nauka, šoping, putovanja, posao, ljudi, muzika</p></div>
 
-		<a href="#" class="btn btn--white btn--transition btn--transition--orange">SAZNAJ VIŠE</a>
+		<a href="kurs-engleskog.html#course_conversation" class="btn btn--white btn--transition btn--transition--orange">SAZNAJ VIŠE</a>
 
 	</div>
 
@@ -319,7 +330,7 @@
 
 		<div class="services__info content-wrapper"><p class="service__info--content">PREVOĐENJE SVIH VRSTA OPŠTIH TEKSTOVA, PREVODI SA OVEROM SUDSKOG TUMAČA</p></div>
 
-		<a href="#" class="btn btn--white btn--transition btn--transition--orange">SAZNAJ VIŠE</a>
+		<a href="prevodilacke-usluge.html" class="btn btn--white btn--transition btn--transition--orange">SAZNAJ VIŠE</a>
 
 	</div>
 	
@@ -355,9 +366,9 @@
                 <div id="testim-content" class="cont">
                     
                     <div class="active">
-                        <div class="img"><img class="lazyload" data-src="https://image.ibb.co/hgy1M7/5a6f718346a28820008b4611_750_562.jpg" alt=""></div>
+                        <div class="img"><img class="lazyload" data-src="assets/images/testimonial-1.jpg" alt=""></div>
                         <h2>Lorem P. Ipsum</h2>
-                        <p class="standard">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
+                        <p class="standard">U Švedskoj mi svi hvale engleski i misle da sam studirala u Americi. Ma kakva Amerika, kakve gluposti, ja sam u Tower išla. &nbsp;&nbsp;&nbsp; <span class="icon icon--smile" style="display: inline-block;"></span> </p>               
                     </div>
 
                     <div>
@@ -401,12 +412,14 @@
 <!-- FOOTER -->
 
 <section class="footer section">
-	<div class="footer__logo"><img class="lazyload" data-src="assets/images/logo.png"></div>
+	<div class="footer__logo"><img class="lazyload" data-src="assets/images/logo.svg"></div>
+	
 	<div class="footer__info">
 		<span>Gandijeva 148a, II sprat, lokal 87 (mala Piramida), bloku 44</span>
-		<span>studio.tower@gmail.com</span>
+		<span><a href="mailto:someone@yoursite.com?subject=Mail from Our Site">studio.tower@gmail.com</a></span>
 		<span>+381 (069) 1163956; +381 (011) 2271966</span>
 	</div>
+
 	<div class="footer__newsletter">
 		<h2>Newsletter</h2>
 		<form class="footer__form">
@@ -415,8 +428,9 @@
 		  <button id="footer_button">OK</button>
 		</form>
 	</div>
-
 </section>
+
+<section class="copyright"><p>© 2018 Tower.</p></section>
 
 <!-- build:js assets/scripts/App.js -->
 <script type="text/javascript" src="/temp/scripts/App.js"></script>

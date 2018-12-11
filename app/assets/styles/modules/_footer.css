@@ -26,6 +26,11 @@
 
     span {
       display: block;
+
+      a, a:link, a:visited, a:active {
+                color: $mainOrange;
+                text-decoration: none;
+            }
     }
 		
 		@mixin atMedium2 {
@@ -131,6 +136,18 @@
     }
 
 
+  }
+}
+
+.copyright {
+  background-color: $mainBlue;
+  color: #fff;
+  font-size: .9rem;
+  height: 30px;
+  text-align: center;
+
+  & p {
+    line-height: 30px;
   }
 }
 

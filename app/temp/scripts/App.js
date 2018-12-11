@@ -108,10 +108,10 @@ __webpack_require__.r(__webpack_exports__);
 var mobileMenu = new _modules_MobileMenu__WEBPACK_IMPORTED_MODULE_0__["default"]('#hamburger-menu-toggle');
 var stickyHeader = new _modules_StickyHeader__WEBPACK_IMPORTED_MODULE_5__["default"]();
 var headerSlider = new _modules_HeaderSlider__WEBPACK_IMPORTED_MODULE_1__["default"]();
-var testimonialsSlider = new _modules_TestimonialsSlider__WEBPACK_IMPORTED_MODULE_2__["default"]();
 new _modules_RevealOnScroll__WEBPACK_IMPORTED_MODULE_3__["default"](jquery__WEBPACK_IMPORTED_MODULE_4___default()('.welcome'), '85%');
 new _modules_RevealOnScroll__WEBPACK_IMPORTED_MODULE_3__["default"](jquery__WEBPACK_IMPORTED_MODULE_4___default()('.whyus'), '85%');
 new _modules_NumberCounter__WEBPACK_IMPORTED_MODULE_6__["default"](jquery__WEBPACK_IMPORTED_MODULE_4___default()('.whyus__infocount'), '95%');
+new _modules_RevealOnScroll__WEBPACK_IMPORTED_MODULE_3__["default"](jquery__WEBPACK_IMPORTED_MODULE_4___default()('.literature-intro'), '85%');
 new _modules_RevealOnScroll__WEBPACK_IMPORTED_MODULE_3__["default"](jquery__WEBPACK_IMPORTED_MODULE_4___default()('.literature-logos'), '85%');
 new _modules_RevealOnScroll__WEBPACK_IMPORTED_MODULE_3__["default"](jquery__WEBPACK_IMPORTED_MODULE_4___default()('.courses'), '85%');
 new _modules_RevealOnScroll__WEBPACK_IMPORTED_MODULE_3__["default"](jquery__WEBPACK_IMPORTED_MODULE_4___default()('.accreditation'), '85%');
@@ -119,6 +119,8 @@ new _modules_RevealOnScroll__WEBPACK_IMPORTED_MODULE_3__["default"](jquery__WEBP
 new _modules_RevealOnScroll__WEBPACK_IMPORTED_MODULE_3__["default"](jquery__WEBPACK_IMPORTED_MODULE_4___default()('.test'), '85%');
 new _modules_RevealOnScroll__WEBPACK_IMPORTED_MODULE_3__["default"](jquery__WEBPACK_IMPORTED_MODULE_4___default()('.testimonials'), '85%');
 new _modules_RevealOnScroll__WEBPACK_IMPORTED_MODULE_3__["default"](jquery__WEBPACK_IMPORTED_MODULE_4___default()('.footer'), '85%');
+new _modules_RevealOnScroll__WEBPACK_IMPORTED_MODULE_3__["default"](jquery__WEBPACK_IMPORTED_MODULE_4___default()('.language-course__content'), '100%');
+var testimonialsSlider = new _modules_TestimonialsSlider__WEBPACK_IMPORTED_MODULE_2__["default"]();
 
 /***/ }),
 /* 1 */

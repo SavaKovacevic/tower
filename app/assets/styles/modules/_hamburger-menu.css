@@ -14,21 +14,13 @@
     flex: 1;
     z-index: 9999;
 
-    @mixin atMedium {
-
-    }
-
-    @mixin atLarge {
-      
-    }
-
     &:hover {
       opacity: .7;
     }
 
     &.active {
       .top {
-        transform: translateY(14px) translateX(0) rotate(45deg);
+        transform: translateY(10px) translateX(0) rotate(45deg);
         background: #FFF;
       }
 
@@ -38,8 +30,22 @@
       }
 
       .bottom {
-        transform: translateY(-14px) translateX(0) rotate(-45deg);
+        transform: translateY(-10px) translateX(0) rotate(-45deg);
         background: #FFF;
+      }
+
+      @mixin atMedium {
+        .top {
+          transform: translateY(14px) translateX(0) rotate(45deg);
+        }
+
+        .middle {
+          opacity: 0;
+        }
+
+        .bottom {
+          transform: translateY(-14px) translateX(0) rotate(-45deg);
+        }
       }
     } 
 
@@ -48,7 +54,7 @@
       background: $mainBlue;
       border: none;
       height: 2px;
-      width: 40px;
+      width: 30px;
       position: absolute;
       left: 0; 
       right: 0; 
@@ -57,12 +63,33 @@
       transition: all .35s ease;
       cursor: pointer;
 
+      &:nth-of-type(1) {
+        top: 5px;
+      }
+
       &:nth-of-type(2) {
-        top: 14px;
+        top: 15px;
       }
 
       &:nth-of-type(3) {
-        top: 28px;
+        top: 25px;
+      }
+
+      @mixin atMedium { 
+        height: 2px;
+        width: 40px;
+
+        &:nth-of-type(1) {
+          top: 0;
+        }
+
+        &:nth-of-type(2) {
+          top: 14px;
+        }
+
+        &:nth-of-type(3) {
+          top: 28px;
+        }
       }
     }
   }
@@ -73,7 +100,11 @@
     display: flex;
     justify-content: center;
     max-width: 300px;
-    margin: 30px auto 0 auto;
+    margin: 20px auto 0 auto;
+
+    @mixin atMedium {
+      margin-top: 30px;
+    }
 
       &--net {
         text-decoration: none;
@@ -108,7 +139,7 @@
   
   &__overlay {
     position: fixed;
-    background: $mainBlue;
+    background-color: rgba($mainBlue, 0.9);
     top: 0;
     left: 0;
     width: 100%;
@@ -116,7 +147,6 @@
     opacity: 0;
     visibility: hidden;
     transition: opacity .35s, visibility .35s, height .35s;
-    overflow-x: hidden;
     z-index: 998;
 
     & img {
@@ -124,27 +154,33 @@
       height: auto;
 
       @mixin atMedium {
-        width: auto;
+        width: 150px;
         height: auto;
       }
     }
 
     &.open {
-      opacity: .9;
+      opacity: 1;
       visibility: visible;
       height: 100%;
       }
 
     nav {
       position: relative;
-      height: 70%;
-      top: 40%;
+      height: 50%;
+      top: 30%;
       transform: translateY(-50%);
-      font-size: 30px;
+      font-size: 20px;
       text-align: center;
+
+      @mixin atMedium {
+        font-size: 30px;
+        height: 70%;
+        top: 40%;
+      }
     }
 
-    li {
+      li {
         animation: fadeInRight .5s ease forwards;
         animation-delay: .35s;
       }
@@ -160,20 +196,31 @@
       li:nth-of-type(5) {
         animation-delay: .55s;
       }
+      li:nth-of-type(6) {
+        animation-delay: .6s;
+
+        @mixin atMedium {
+          display: none;
+        }
+      }
 
     ul {
       list-style: none;
       padding: 0;
-      margin: 30px auto 0 auto;
+      margin: 20px auto 0 auto;
       display: inline-block;
       position: relative;
       height: 40%;
 
+      @mixin atMedium {
+        margin-top: 30px;
+      }
+
       li {
         display: block;
-        height: 25%;
+        height: 20%;
         height: calc(100% / 4);
-        min-height: 50px;
+        min-height: 40px;
         position: relative;
         opacity: 0;
 
@@ -182,8 +229,16 @@
           position: relative;
           color: #FFF;
           text-decoration: none;
-          overflow: hidden;
         }
+
+        .orange-link {
+            background-color: $mainOrange;
+            line-height: 2rem;
+
+            @mixin atMedium {
+              display: none;
+            }
+          }
 
         a:hover:after, a:focus:after, a:active:after {
           width: 100%;
@@ -199,7 +254,7 @@
           height: 3px;
           background: #FFF;
           transition: .35s;
-        }     
+        }    
       }
     }
   }

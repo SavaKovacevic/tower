@@ -6,7 +6,7 @@
     text-align: center;
     font-size: 0.8rem;
     font-family: 'Proxima Nova Lt', Georgia, sans-serif;
-    color: $mainBlue;
+    color: #fff;
     text-decoration: none;
     border: 1px solid $mainBlue;
     display: inline-block;
@@ -14,12 +14,7 @@
     transition: all 0.3s ease-in-out;
     position: relative;
     overflow: hidden;
-
-
-    &--hero {
-        background-color:rgba(255, 255, 255, 0.43);
-        margin: 0;
-        }
+    background-color: $mainBlue;
 
     &--transition {
 
@@ -46,6 +41,10 @@
             left: 0;
         }
 
+        &--orange {
+            border: 1px solid #fff;
+        }
+
         &--orange:before {
             background-color: $mainOrange;
         }
@@ -65,20 +64,17 @@
         font-size: 1.125rem;
         }
 
-    &--margin-bottom {
-        margin-bottom: 50px;
+    @mixin atLarge {
+        color: $mainBlue;
+        background-color: transparent;
+    }
 
-        @mixin atMedium {
-            margin-bottom: 100px;
-           }
+    &--hero {
+        margin: 0;
+        @mixin atLarge {
+            background-color:rgba(255, 255, 255, 0.43);
         }
-    &--margin-top {
-        margin-top: 50px;
-
-        @mixin atMedium {
-            margin-top: 0;
-            }
-        }
+    }
 
     &--width {
         width: 100%;
@@ -86,8 +82,11 @@
     }
 
     &--white {
-        border: 1px solid white;
-        color: white;
+
+        @mixin atLarge {
+            border: 1px solid white;
+            color: white;
+        }
     }
 
     &--header {

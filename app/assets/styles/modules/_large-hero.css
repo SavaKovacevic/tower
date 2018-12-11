@@ -71,6 +71,14 @@
         top: 60%;
         transform: translateY(-50%);
         text-align: left;
+
+        & p {
+            background-color: $mainOrange;
+            width: 150px;
+            text-align: center;
+            margin: 0;
+            font-size: .9rem;
+        }
     }
 
     &__slogan {

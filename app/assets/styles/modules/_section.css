@@ -26,4 +26,14 @@
 
 .accreditation {
 	padding: 100px 0;
+	max-width: 640px;
+
+	p {
+		margin-bottom: 0;
+	}
+
+	a, a:link, a:visited, a:active {
+                color: $mainOrange;
+                text-decoration: none;
+            }
 }
