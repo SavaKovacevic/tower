@@ -1,1 +1,209 @@
-upisi-kurs.html
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Tower - škola stranih jezika</title>
+	<!-- build:css assets/styles/styles.css -->
+	<link rel="stylesheet" type="text/css" href="temp/styles/styles.css">
+	<!-- endbuild -->
+
+	<!-- build:js assets/scripts/Vendor.js -->
+	<script src="/temp/scripts/Vendor.js"></script>
+	<!-- endbuild -->
+</head>
+<body>
+
+
+	
+
+
+<!-- MENU -->
+<header class="site-header site-header--background">
+	<!-- HAMBURGER MENU -->
+	<div class="site-header__hamburger-menu" id="hamburger-menu-toggle">
+		<span class="top"></span>
+		<span class="middle"></span>
+		<span class="bottom"></span>
+	</div>
+	<!-- MENU OVERLAY -->
+	<div class="site-header__overlay" id="overlay">
+		<nav class="site-header__overlay--menu">
+			<div class="site-header__overlay--logo"><a href="index.html"><img src="assets/images/logo--white.svg" class="logo"></a></div>
+	    	<ul>
+				<li><a href="zasto-tower.html">Zašto Tower</a></li>
+	        	<li><a href="kursevi.html">Kursevi</a></li>
+	        	<li><a href="medjunarodni-ispiti.html">Međunarodni Ispiti</a></li>
+	        	<li><a href="prevodilacke-usluge.html">Prevodilačke Usluge</a></li>
+	        	<li><a href="kontakt.html">Kontakt</a></li>
+	        	<li><a href="upisi-kurs.html" class="orange-link">Upiši kurs</a></li>
+			</ul>
+
+			<div class="overlay__social">
+				<a href="https://www.facebook.com/tower.skola/" target="_blank" class="overlay__social--net">
+					<span class="icon icon--facebook"></span>
+					<span class="overlay__social--text">Facebook</span>
+				</a>
+
+				<a href="https://www.instagram.com/tower_skola_stranih_jezika/" target="_blank" class="overlay__social--net">
+					<span class="icon icon--instagram"></span>
+					<span class="overlay__social--text">Instagram</span>
+				</a>
+			</div>
+
+			<div class="overlay__social">
+				<a href="kurs-engleskog.html" target="_blank" class="overlay__social--net">
+					<span class="icon icon--united-kingdom"></span>
+					<span class="overlay__social--text">Kurs: <br>Engleski</span>
+				</a>
+
+				<a href="kurs-nemackog.html" target="_blank" class="overlay__social--net">
+					<span class="icon icon--germany"></span>
+					<span class="overlay__social--text">Kurs: <br>Nemački</span>
+				</a>
+			</div>
+		</nav>
+	</div>
+	<!-- LOGO -->
+	<div class="site-header__logo">
+   		<a href="index.html"><img src="assets/images/logo.svg" class="logo"></a>
+   	</div>
+	<!-- INFO -->
+	<div class="site-header__info">
+		<!-- ADRESS -->
+	   	<a href="map.html" class="site-header__info--adress">
+	   		<pop-area>
+	   			<span>Pogledaj mapu</span>
+	   		</pop-area>
+	   		<span class="icon icon--placeholder site-header__info--icon-background"></span>
+	   		<span class="site-header__info--location">Gandijeva 148a</span>
+	   	</a>
+		<!-- PHONE -->
+	   	<a href="tel:+381691163956" class="site-header__info--phone">
+	   		<pop-area>
+	   			<span>Pozovi</span>
+	   		</pop-area>
+	   		<span class="icon icon--phone site-header__info--icon-background"></span>
+	   		<span class="site-header__info--number">069 11 63 956</span>
+	   	</a>
+	   	<!-- CALL TO ACTION -->
+	   	<div class="site-header__info--button">
+	   		<a href="upisi-kurs.html"><div class="btn btn--header">
+	   		UPIŠI KURS
+	   		</div></a>
+	   	</div>  	
+   	</div>
+	<!-- FLEXBOX HELPER -->
+   	<div class="right-helper">
+   		<a href="tel:+381691163956" class="right-helper--phone">
+	   		<span class="icon icon--phone-orange site-header__info--icon-background"></span>
+	   	</a>
+</header>
+
+<!-- SOCIAL -->
+<div class="social">
+	<a href="https://www.facebook.com/tower.skola/" target="_blank" class="social__net">
+		<span class="icon icon--facebook"></span>
+		<span class="social__text">Facebook</span>
+	</a>
+
+	<a href="https://www.instagram.com/tower_skola_stranih_jezika/" target="_blank" class="social__net social__net--margin">
+		<span class="icon icon--instagram"></span>
+		<span class="social__text">Instagram</span>
+	</a>
+
+	<a href="kurs-engleskog.html" class="social__net social__net--margin-double">
+		<span class="icon icon--united-kingdom"></span>
+		<span class="social__text">Kurs: <br>Engleski</span>
+	</a>
+
+	<a href="kurs-nemackog.html" class="social__net social__net--margin">
+		<span class="icon icon--germany"></span>
+		<span class="social__text">Kurs: <br>Nemački</span>
+	</a>
+</div>
+	
+</div>
+
+<!-- SIDELINES -->
+<div class='left-side-line'>
+</div>
+<div class='right-side-line'>
+</div>
+
+
+<!-- CONTACT FORM -->
+<div class="contact-container">
+
+<form action="contact.php" class="contact" method="post">
+  <h1>Contact Us</h1>
+  <div class="group">
+    <input type="text" id="name" name="name" required="required"/>
+    <label for="name">Name</label>
+  </div>
+  <div class="group">
+    <input type="text" id="email" name="email" required="required"/>
+    <label for="email">Email</label>
+  </div>
+  <div class="group">
+    <input type="tel" id="phone" name="phone"
+       pattern="[0-9]{3}[0-9]{3}[0-9]{3-4}"
+       required="required"/>
+    <label for="phone">Enter your phone number:</label>
+  </div>
+  <div class="group">
+  <select name="kurs" id="kurs" required aria-required="true" class="drop-down-menu">
+  	  <option value="">Izaberi kurs</option>
+	  <option class="not-selected" value="1">Kurs engleskog za osnovce</option>
+	  <option class="not-selected" value="2" class="note">Kurs engleskog za tinejdžere</option>
+	  <option class="not-selected" value="3">Kurs engleskog za odrasle</option>
+	  <option class="not-selected" value="3">Konverzacijski kurs engleskog</option>
+	  <option class="not-selected" value="4">Kurs nemačkog za osnovce</option>
+	  <option class="not-selected" value="5">Kurs nemačkog za tinejdžere</option>
+	  <option class="not-selected" value="6">Kurs nemačkog za odrasle</option>
+	  <option class="not-selected" value="7">Priprema međunarodnog ispita</option>
+	</select>
+	<span class="note">Format: 0612345678</span>
+  </div>
+  <div class="group">
+    <textarea id="message" name="message" required="required"></textarea>
+    <label for="message">Your Message</label>
+  </div>
+  <div class="group">
+  <button type="submit" value="Submit" class="btn btn--transition btn--width">POŠALJI</button>
+</div>
+</form>
+
+
+</div>
+
+
+
+<!-- FOOTER -->
+
+<section class="footer section">
+	<div class="footer__logo"><img src="assets/images/logo.png"></div>
+	<div class="footer__info">
+		<span>Gandijeva 148a, II sprat, lokal 87 (mala Piramida), bloku 44</span>
+		<span>studio.tower@gmail.com</span>
+		<span>+381 (069) 1163956; +381 (011) 2271966</span>
+	</div>
+	<div class="footer__newsletter">
+		<h2>Newsletter</h2>
+		<form class="footer__form">
+		  <input type="email" id="footer__email"/>
+		  <label for="footer__email">vaša email adresa</label>
+		  <button id="footer_button">OK</button>
+		</form>
+	</div>
+
+</section>
+
+<!-- build:js assets/scripts/App.js -->
+<script type="text/javascript" src="/temp/scripts/App.js"></script>
+<!-- endbuild -->
+
+
+</body>
+</html>

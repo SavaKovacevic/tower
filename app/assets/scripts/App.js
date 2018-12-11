@@ -9,6 +9,7 @@ import NumberCounter from './modules/NumberCounter';
 var mobileMenu = new MobileMenu('#hamburger-menu-toggle');
 var stickyHeader = new StickyHeader();
 var headerSlider = new HeaderSlider();
+var optionSelect = new OptionSelect();
 new RevealOnScroll($('.welcome'), '85%');
 new RevealOnScroll($('.whyus'), '85%');
 new NumberCounter($('.whyus__infocount'), '95%');

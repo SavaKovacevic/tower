@@ -108,6 +108,7 @@ __webpack_require__.r(__webpack_exports__);
 var mobileMenu = new _modules_MobileMenu__WEBPACK_IMPORTED_MODULE_0__["default"]('#hamburger-menu-toggle');
 var stickyHeader = new _modules_StickyHeader__WEBPACK_IMPORTED_MODULE_5__["default"]();
 var headerSlider = new _modules_HeaderSlider__WEBPACK_IMPORTED_MODULE_1__["default"]();
+var optionSelect = new OptionSelect();
 new _modules_RevealOnScroll__WEBPACK_IMPORTED_MODULE_3__["default"](jquery__WEBPACK_IMPORTED_MODULE_4___default()('.welcome'), '85%');
 new _modules_RevealOnScroll__WEBPACK_IMPORTED_MODULE_3__["default"](jquery__WEBPACK_IMPORTED_MODULE_4___default()('.whyus'), '85%');
 new _modules_NumberCounter__WEBPACK_IMPORTED_MODULE_6__["default"](jquery__WEBPACK_IMPORTED_MODULE_4___default()('.whyus__infocount'), '95%');
