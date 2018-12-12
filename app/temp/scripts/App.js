@@ -12050,6 +12050,8 @@ function () {
     this.testHidden = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.test__results--hidden');
     this.triggerButton = jquery__WEBPACK_IMPORTED_MODULE_0___default()('#btn--trigger');
     this.countItems = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.option-input');
+    this.alertBox = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.alert-overlay');
+    this.closeAlert = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.close-alert');
     this.events();
   }
 
@@ -12057,16 +12059,22 @@ function () {
     key: "events",
     value: function events() {
       this.triggerButton.click(this.showResults.bind(this));
+      this.closeAlert.click(this.closeAlertBox.bind(this));
     }
   }, {
     key: "showResults",
     value: function showResults() {
       var numberOfCheckedRadio = jquery__WEBPACK_IMPORTED_MODULE_0___default()('input:radio:checked').length;
 
-      if (numberOfCheckedRadio = 25) {
+      if (numberOfCheckedRadio == 25) {
         this.testHidden.addClass('test__results--show');
         this.triggerButton.addClass('test__results--hidden');
-      } else alert('Niste odgovorili na sva pitanja');
+      } else this.alertBox.addClass('open-box');
+    }
+  }, {
+    key: "closeAlertBox",
+    value: function closeAlertBox() {
+      this.alertBox.removeClass('open-box');
     }
   }]);
 

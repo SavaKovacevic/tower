@@ -2870,6 +2870,49 @@ Instead edit gulp/templates/sprite*/
             background-image: url(../../assets/images/hero--adult.jpg);   
         }
 
+.alert-overlay {
+    position: fixed;
+    background-color: rgba(255,255,255, 0.9);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .35s, visibility .35s, height .35s;
+    z-index: 999;
+}
+
+.alert-overlay.open-box {
+      opacity: 1;
+      visibility: visible;
+      height: 100%;
+      z-index: 999;
+      }
+
+.alert-overlay--close {
+      vertical-align: middle;
+      display: block;
+      position: absolute; 
+      left: 0; 
+      right: 0; 
+      top: 0;
+      bottom: 0;
+      margin-left: auto; 
+      margin-right: auto;
+      margin-bottom: auto; 
+      margin-top: auto;
+      text-align: center;
+      max-width: 300px;
+    }
+
+.alert-overlay--close .inside {
+        position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+      }
+
 .test-intro {
   font-family: 'Proxima Nova Rg', Georgia, sans-serif;
 }
@@ -2944,7 +2987,7 @@ Instead edit gulp/templates/sprite*/
   margin-right: 0.5rem;
   outline: none;
   position: relative;
-  z-index: 1000;
+  z-index: 998;
 }
 
 .option-input:hover {
