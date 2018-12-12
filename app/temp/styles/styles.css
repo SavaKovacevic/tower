@@ -350,7 +350,7 @@ template {
 }
 
 /*!
- * Font Awesome Free 5.5.0 by @fontawesome - https://fontawesome.com
+ * Font Awesome Free 5.6.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 
@@ -2886,6 +2886,43 @@ Instead edit gulp/templates/sprite*/
     margin: 20px 0 0 0
 }
 	}
+
+.contact-form .group {
+    width: 250px;
+    position: relative;
+  }
+
+.contact-form .group label {
+    position: absolute;
+    top: 7px;
+    cursor: text;
+    transition: .2s;
+    color: #e16925;
+  }
+
+.contact-form .group input {
+    background: linear-gradient(to bottom, transparent 92%, #003a61 8%) no-repeat;
+    background-position: -300px 0;
+    background-size: 300px 100%;
+    display: block;
+    width: 250px;
+    padding: 5px 0;
+    margin-top: 30px;
+    border: none;
+    border-bottom: solid 1px #003a61;
+    font-size: 15px;
+    transition: all 0.3s;
+  }
+
+.contact-form .group input:focus, .contact-form .group input:valid {
+      background-position: 0 0;
+      outline: none;
+    }
+
+.contact-form .group input:focus ~label, .contact-form .group input:valid ~label {
+        color: transparent;
+        transition: all 0.3s;
+      }
 
 .option-input {
   -webkit-appearance: none;
