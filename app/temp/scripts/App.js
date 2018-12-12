@@ -98,6 +98,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _modules_StickyHeader__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(7);
 /* harmony import */ var _modules_NumberCounter__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(8);
+/* harmony import */ var _modules_TestPage__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(9);
+/* harmony import */ var _modules_DisplayTestResults__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(10);
 
 
 
@@ -105,10 +107,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+var testPage = new _modules_TestPage__WEBPACK_IMPORTED_MODULE_7__["default"]();
+var displayTestResults = new _modules_DisplayTestResults__WEBPACK_IMPORTED_MODULE_8__["default"]();
 var mobileMenu = new _modules_MobileMenu__WEBPACK_IMPORTED_MODULE_0__["default"]('#hamburger-menu-toggle');
 var stickyHeader = new _modules_StickyHeader__WEBPACK_IMPORTED_MODULE_5__["default"]();
 var headerSlider = new _modules_HeaderSlider__WEBPACK_IMPORTED_MODULE_1__["default"]();
-var optionSelect = new OptionSelect();
 new _modules_RevealOnScroll__WEBPACK_IMPORTED_MODULE_3__["default"](jquery__WEBPACK_IMPORTED_MODULE_4___default()('.welcome'), '85%');
 new _modules_RevealOnScroll__WEBPACK_IMPORTED_MODULE_3__["default"](jquery__WEBPACK_IMPORTED_MODULE_4___default()('.whyus'), '85%');
 new _modules_NumberCounter__WEBPACK_IMPORTED_MODULE_6__["default"](jquery__WEBPACK_IMPORTED_MODULE_4___default()('.whyus__infocount'), '95%');
@@ -11596,6 +11601,368 @@ function () {
 }();
 
 /* harmony default export */ __webpack_exports__["default"] = (NumberCounter);
+
+/***/ }),
+/* 9 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+
+
+var TestPage = function TestPage() {
+  _classCallCheck(this, TestPage);
+
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[name="1"]').on('change', function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()("#result").text(jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val());
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[name="1"]').on('change', function () {
+    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val() == "When are you free?") {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res"]').val('1');
+    } else {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res"]').val('0');
+    }
+  }); // Drugo pitanje
+
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[name="2"]').on('change', function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()("#result2").text(jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val());
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[name="2"]').on('change', function () {
+    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val() == "How long for?") {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res2"]').val('1');
+    } else {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res2"]').val('0');
+    }
+  }); // Trece pitanje
+
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[name="3"]').on('change', function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()("#result3").text(jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val());
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[name="3"]').on('change', function () {
+    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val() == "In the evenings") {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res3"]').val('1');
+    } else {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res3"]').val('0');
+    }
+  }); // Cetvrto pitanje
+
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[name="4"]').on('change', function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()("#result4").text(jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val());
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[name="4"]').on('change', function () {
+    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val() == "Have you got anything else?") {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res4"]').val('1');
+    } else {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res4"]').val('0');
+    }
+  }); // Peto pitanje
+
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[name="5"]').on('change', function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()("#result5").text(jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val());
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[name="5"]').on('change', function () {
+    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val() == "Tom isn't here yet.") {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res5"]').val('1');
+    } else {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res5"]').val('0');
+    }
+  }); // Šesto pitanje
+
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[name="6"]').on('change', function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()("#result6").text(jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val());
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[name="6"]').on('change', function () {
+    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val() == "falling") {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res6"]').val('1');
+    } else {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res6"]').val('0');
+    }
+  }); // Sedmo pitanje
+
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[name="7"]').on('change', function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()("#result7").text(jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val());
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[name="7"]').on('change', function () {
+    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val() == "must") {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res7"]').val('1');
+    } else {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res7"]').val('0');
+    }
+  }); // Osmo pitanje
+
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[name="8"]').on('change', function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()("#result8").text(jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val());
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[name="8"]').on('change', function () {
+    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val() == "lose") {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res8"]').val('1');
+    } else {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res8"]').val('0');
+    }
+  }); // Deveto pitanje
+
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[name="9"]').on('change', function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()("#result9").text(jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val());
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[name="9"]').on('change', function () {
+    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val() == "information") {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res9"]').val('1');
+    } else {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res9"]').val('0');
+    }
+  }); // Deseto pitanje
+
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[name="10"]').on('change', function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()("#result10").text(jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val());
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[name="10"]').on('change', function () {
+    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val() == "way") {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res10"]').val('1');
+    } else {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res10"]').val('0');
+    }
+  }); // Jedanaesto pitanje
+
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[name="11"]').on('change', function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()("#result11").text(jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val());
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[name="11"]').on('change', function () {
+    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val() == "making") {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res11"]').val('1');
+    } else {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res11"]').val('0');
+    }
+  }); // Dvanaesto pitanje
+
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[name="12"]').on('change', function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()("#result12").text(jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val());
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[name="12"]').on('change', function () {
+    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val() == "attitude") {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res12"]').val('1');
+    } else {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res12"]').val('0');
+    }
+  }); // Trinaesto pitanje
+
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[name="13"]').on('change', function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()("#result13").text(jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val());
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[name="13"]').on('change', function () {
+    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val() == "has had") {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res13"]').val('1');
+    } else {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res13"]').val('0');
+    }
+  }); // Četrnaesto pitanje
+
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[name="14"]').on('change', function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()("#result14").text(jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val());
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[name="14"]').on('change', function () {
+    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val() == "between") {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res14"]').val('1');
+    } else {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res14"]').val('0');
+    }
+  }); // Petnaesto pitanje
+
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[name="15"]').on('change', function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()("#result15").text(jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val());
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[name="15"]').on('change', function () {
+    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val() == "as usual.") {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res15"]').val('1');
+    } else {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res15"]').val('0');
+    }
+  }); // Šesnesto pitanje
+
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[name="16"]').on('change', function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()("#result16").text(jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val());
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[name="16"]').on('change', function () {
+    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val() == "Provided") {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res16"]').val('1');
+    } else {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res16"]').val('0');
+    }
+  }); // Sedamnaesto pitanje
+
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[name="17"]').on('change', function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()("#result17").text(jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val());
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[name="17"]').on('change', function () {
+    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val() == "supply") {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res17"]').val('1');
+    } else {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res17"]').val('0');
+    }
+  }); // Osamnaesto pitanje
+
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[name="18"]').on('change', function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()("#result18").text(jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val());
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[name="18"]').on('change', function () {
+    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val() == "set") {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res18"]').val('1');
+    } else {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res18"]').val('0');
+    }
+  }); // Devetnaesto pitanje
+
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[name="19"]').on('change', function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()("#result19").text(jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val());
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[name="19"]').on('change', function () {
+    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val() == "handy") {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res19"]').val('1');
+    } else {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res19"]').val('0');
+    }
+  }); // Dvadeseto pitanje
+
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[name="20"]').on('change', function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()("#result20").text(jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val());
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[name="20"]').on('change', function () {
+    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val() == "arriving") {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res20"]').val('1');
+    } else {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res20"]').val('0');
+    }
+  }); // Dvadesetprvo pitanje
+
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[name="21"]').on('change', function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()("#result21").text(jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val());
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[name="21"]').on('change', function () {
+    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val() == "fancy") {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res21"]').val('1');
+    } else {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res21"]').val('0');
+    }
+  }); // Dvadesetdrugo pitanje
+
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[name="22"]').on('change', function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()("#result22").text(jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val());
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[name="22"]').on('change', function () {
+    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val() == "engage") {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res22"]').val('1');
+    } else {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res22"]').val('0');
+    }
+  }); // Dvadesettrece pitanje
+
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[name="23"]').on('change', function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()("#result23").text(jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val());
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[name="23"]').on('change', function () {
+    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val() == "offence") {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res23"]').val('1');
+    } else {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res23"]').val('0');
+    }
+  }); // Dvadesetčetvrto pitanje
+
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[name="24"]').on('change', function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()("#result24").text(jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val());
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[name="24"]').on('change', function () {
+    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val() == "prepared") {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res24"]').val('1');
+    } else {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res24"]').val('0');
+    }
+  }); // Dvadesetpeto pitanje
+
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[name="25"]').on('change', function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()("#result25").text(jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val());
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[name="25"]').on('change', function () {
+    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val() == "supply.") {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res25"]').val('1');
+    } else {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res25"]').val('0');
+    }
+  }); // Suma bodova
+
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[type="radio"]').on('change', function () {
+    var suma = 0;
+    suma += Number(jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res"]').val()) + Number(jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res2"]').val()) + Number(jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res3"]').val()) + Number(jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res4"]').val()) + Number(jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res5"]').val()) + Number(jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res6"]').val()) + Number(jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res7"]').val()) + Number(jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res8"]').val()) + Number(jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res9"]').val()) + Number(jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res10"]').val()) + Number(jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res11"]').val()) + Number(jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res12"]').val()) + Number(jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res13"]').val()) + Number(jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res14"]').val()) + Number(jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res15"]').val()) + Number(jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res16"]').val()) + Number(jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res17"]').val()) + Number(jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res18"]').val()) + Number(jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res19"]').val()) + Number(jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res20"]').val()) + Number(jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res21"]').val()) + Number(jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res22"]').val()) + Number(jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res23"]').val()) + Number(jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res24"]').val()) + Number(jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res25"]').val());
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()("#sum").val(suma);
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[type="radio"]').on('change', function () {
+    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("#sum").val() > 6 && jquery__WEBPACK_IMPORTED_MODULE_0___default()("#sum").val() < 12) {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()("#nivo").text('A2');
+    } else if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("#sum").val() > 13 && jquery__WEBPACK_IMPORTED_MODULE_0___default()("#sum").val() < 17) {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()("#nivo").text('B1');
+    } else if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("#sum").val() > 18 && jquery__WEBPACK_IMPORTED_MODULE_0___default()("#sum").val() < 21) {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()("#nivo").text('B2');
+    } else if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("#sum").val() == 22) {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()("#nivo").text('C1');
+    } else if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("#sum").val() > 23 && jquery__WEBPACK_IMPORTED_MODULE_0___default()("#sum").val() < 25) {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()("#nivo").text('C2');
+    }
+  });
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (TestPage);
+
+/***/ }),
+/* 10 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+
+
+var DisplayTestResults =
+/*#__PURE__*/
+function () {
+  function DisplayTestResults() {
+    _classCallCheck(this, DisplayTestResults);
+
+    this.testHidden = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.test__results--hidden');
+    this.triggerButton = jquery__WEBPACK_IMPORTED_MODULE_0___default()('#btn--trigger');
+    this.countItems = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.option-input');
+    this.events();
+  }
+
+  _createClass(DisplayTestResults, [{
+    key: "events",
+    value: function events() {
+      this.triggerButton.click(this.showResults.bind(this));
+    }
+  }, {
+    key: "showResults",
+    value: function showResults() {
+      var numberOfCheckedRadio = jquery__WEBPACK_IMPORTED_MODULE_0___default()('input:radio:checked').length;
+
+      if (numberOfCheckedRadio = 25) {
+        this.testHidden.addClass('test__results--show');
+        this.triggerButton.addClass('test__results--hidden');
+      } else alert('Niste odgovorili na sva pitanja');
+    }
+  }]);
+
+  return DisplayTestResults;
+}();
+
+/* harmony default export */ __webpack_exports__["default"] = (DisplayTestResults);
 
 /***/ })
 /******/ ]);
