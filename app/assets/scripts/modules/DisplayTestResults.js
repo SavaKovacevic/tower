@@ -20,6 +20,7 @@ class DisplayTestResults {
 		if(numberOfCheckedRadio == 25) {
 				this.testHidden.addClass('test__results--show');
 				this.triggerButton.addClass('test__results--hidden');
+				window.scrollTo(0, document.body.scrollHeight || document.documentElement.scrollHeight);
 			} else (this.alertBox.addClass('open-box'));
 	}
 
