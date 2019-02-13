@@ -350,7 +350,7 @@ template {
 }
 
 /*!
- * Font Awesome Free 5.6.0 by @fontawesome - https://fontawesome.com
+ * Font Awesome Free 5.5.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 
@@ -1587,6 +1587,24 @@ h2 {
 		margin-right: auto;
 		margin-left: auto;
 	}
+
+.whyus-page {
+    border-bottom: 1px solid #003a61;
+}
+
+.whyus-page__image {
+
+        max-width: 640px;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+            padding: 50px 0;
+    }
+
+.whyus-page__image img {
+            width: 60%;
+
+        }
 
 .whyus {
     padding: 50px 0;
