@@ -129,3 +129,8 @@
   }
 
 }
+
+/* Initially hide element */
+.hide {
+  display: none;
+}

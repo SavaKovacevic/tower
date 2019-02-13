@@ -1,14 +1,15 @@
+import $ from 'jquery';
 import MobileMenu from './modules/MobileMenu';
 import HeaderSlider from './modules/HeaderSlider';
 import TestimonialsSlider from './modules/TestimonialsSlider';
 import RevealOnScroll from './modules/RevealOnScroll';
-import $ from 'jquery';
 import StickyHeader from './modules/StickyHeader';
 import NumberCounter from './modules/NumberCounter';
 import TestPage from './modules/TestPage';
 import DisplayTestResults from './modules/DisplayTestResults';
 import FormSubmission from './modules/FormSubmission';
 
+var formSubmission = new FormSubmission();
 var testPage = new TestPage();
 var displayTestResults = new DisplayTestResults();
 var mobileMenu = new MobileMenu('#hamburger-menu-toggle');
@@ -27,4 +28,3 @@ new RevealOnScroll($('.testimonials'), '85%');
 new RevealOnScroll($('.footer'), '85%');
 new RevealOnScroll($('.language-course__content'), '100%');
 var testimonialsSlider = new TestimonialsSlider();
-var formSubmission = new FormSubmission();

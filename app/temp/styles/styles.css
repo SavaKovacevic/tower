@@ -2853,6 +2853,12 @@ Instead edit gulp/templates/sprite*/
     color: white;
   }
 
+/* Initially hide element */
+
+.hide {
+  display: none;
+}
+
 .berlin{
             background: no-repeat bottom/cover;
             background-image: url(../../assets/images/berlin.jpg);

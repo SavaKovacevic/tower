@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 	<title>Tower - škola stranih jezika</title>
-	<link rel="stylesheet" href="assets/styles/styles-37c78c06d9.css"/>
+	<link rel="stylesheet" href="assets/styles/styles-1f402ed8c3.css"/>
 
 	<script src="assets/scripts/Vendor-904d952fd9.js"></script>
 </head>
@@ -132,7 +132,7 @@
 <!-- CONTACT FORM -->
 <div class="contact-container">
 
-<form action="enrollForm.php" class="contact" method="post">
+<form id="enroll-form" class="contact">
   <h1>Kontaktirajte nas</h1>
   <div class="group">
     <input type="text" id="name" name="name" required="required"/>
@@ -157,7 +157,7 @@
 	  <option class="not-selected" value="3">Kurs engleskog za odrasle</option>
 	  <option class="not-selected" value="3">Konverzacijski kurs engleskog</option>
 	  <option class="not-selected" value="4">Kurs nemačkog za osnovce</option>
-	  <option class="not-selected" value="5">Kurs nemačkog za tinejdžere</option>
+	  <option class="not-selected" value="Kurs nemačkog za tinejdžere">Kurs nemačkog za tinejdžere</option>
 	  <option class="not-selected" value="6">Kurs nemačkog za odrasle</option>
 	  <option class="not-selected" value="7">Priprema međunarodnog ispita</option>
 	</select>
@@ -167,10 +167,13 @@
     <label for="message">Vaša poruka</label>
   </div>
   <div class="group">
-  <button type="submit" value="Submit" class="btn btn--transition btn--width enroll-btn">POŠALJI</button>
+  <button type="submit" class="btn btn--transition btn--width enroll-btn">POŠALJI</button>
 </div>
 </form>
 
+<div class="success hide">
+	Hvala sto ste nas kontaktirali!
+</div>
 
 </div>
 
@@ -196,7 +199,7 @@
 
 </section>
 
-<script src="assets/scripts/App-5c4bc9cbf4.js"></script>
+<script src="assets/scripts/App-1a71b45701.js"></script>
 
 
 </body>

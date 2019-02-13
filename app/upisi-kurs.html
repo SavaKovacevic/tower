@@ -136,7 +136,7 @@
 <!-- CONTACT FORM -->
 <div class="contact-container">
 
-<form action="enrollForm.php" class="contact" method="post">
+<form id="enroll-form" class="contact">
   <h1>Kontaktirajte nas</h1>
   <div class="group">
     <input type="text" id="name" name="name" required="required"/>
@@ -161,7 +161,7 @@
 	  <option class="not-selected" value="3">Kurs engleskog za odrasle</option>
 	  <option class="not-selected" value="3">Konverzacijski kurs engleskog</option>
 	  <option class="not-selected" value="4">Kurs nemačkog za osnovce</option>
-	  <option class="not-selected" value="5">Kurs nemačkog za tinejdžere</option>
+	  <option class="not-selected" value="Kurs nemačkog za tinejdžere">Kurs nemačkog za tinejdžere</option>
 	  <option class="not-selected" value="6">Kurs nemačkog za odrasle</option>
 	  <option class="not-selected" value="7">Priprema međunarodnog ispita</option>
 	</select>
@@ -171,10 +171,13 @@
     <label for="message">Vaša poruka</label>
   </div>
   <div class="group">
-  <button type="submit" value="Submit" class="btn btn--transition btn--width enroll-btn">POŠALJI</button>
+  <button type="submit" class="btn btn--transition btn--width enroll-btn">POŠALJI</button>
 </div>
 </form>
 
+<div class="success hide">
+	Hvala sto ste nas kontaktirali!
+</div>
 
 </div>
 
@@ -201,7 +204,7 @@
 </section>
 
 <!-- build:js assets/scripts/App.js -->
-<script type="text/javascript" src="/temp/scripts/App.js"></script>
+<script type="module" src="/temp/scripts/App.js"></script>
 <!-- endbuild -->
 
 
