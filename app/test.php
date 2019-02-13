@@ -5,17 +5,19 @@ $to = 's86.kovacevic@gmail.com';
 $subject='Upisi kurs';
 if(isset($_POST['name'])){$name=$_POST['name'];}
 if(isset($_POST['email'])){$email=$_POST['email'];}
-if(isset($_POST['message'])){$message=$_POST['message'];}
+if(isset($_POST['level'])){$level=$_POST['level'];}
+if(isset($_POST['score'])){$score=$_POST['score'];}
 
 // Message
 $message = '
 <html>
 <head>
-  <title>'. $subject .'</title>
+  <title>'. $name .'</title>
 </head>
 <body>
-  <p>Od: '. $email .'</p>
-  <p>Poruka: '. $message .'</p>
+  <p>Email: '. $email .'</p>
+  <p>Nivo: '. $level .'</p>
+  <p>Rezultat: '. $score .'</p>
 </body>
 </html>
 ';
@@ -27,6 +29,8 @@ $headers[] = 'Content-type: text/html; charset=iso-8859-1';
 // Additional headers
 $headers[] = 'To: Sava <s86.kovacevic@gmail.com>';
 $headers[] = 'From: ' . $email . '';
+
+echo($message);
 
 // Mail it
 mail($to, $subject, $message, implode("\r\n", $headers));

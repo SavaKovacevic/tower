@@ -331,19 +331,25 @@ $('input[type="radio"]').on('change', function () {
     var suma = 0;
     suma += Number($('input[id="res"]').val()) + Number($('input[id="res2"]').val()) + Number($('input[id="res3"]').val()) + Number($('input[id="res4"]').val()) + Number($('input[id="res5"]').val()) + Number($('input[id="res6"]').val()) + Number($('input[id="res7"]').val()) + Number($('input[id="res8"]').val()) + Number($('input[id="res9"]').val()) + Number($('input[id="res10"]').val()) + Number($('input[id="res11"]').val()) + Number($('input[id="res12"]').val()) + Number($('input[id="res13"]').val()) + Number($('input[id="res14"]').val()) + Number($('input[id="res15"]').val()) + Number($('input[id="res16"]').val()) + Number($('input[id="res17"]').val()) + Number($('input[id="res18"]').val()) + Number($('input[id="res19"]').val()) + Number($('input[id="res20"]').val()) + Number($('input[id="res21"]').val()) + Number($('input[id="res22"]').val()) + Number($('input[id="res23"]').val()) + Number($('input[id="res24"]').val()) + Number($('input[id="res25"]').val());
     $("#sum").val(suma);
+    $('#test-score').val(suma);
 });
 
 $('input[type="radio"]').on('change', function () {
     if ($("#sum").val() > 6 && $("#sum").val() < 12) {
         $("#nivo").text('A2');
+        $("#test-lvl").val('A2');
     } else if ($("#sum").val() > 13 && $("#sum").val() < 17){
         $("#nivo").text('B1');
+        $("#test-lvl").val('B1');
     } else if ($("#sum").val() > 18 && $("#sum").val() < 21){
         $("#nivo").text('B2');
+        $("#test-lvl").val('B2');
     } else if ($("#sum").val() == 22){
         $("#nivo").text('C1');
+        $("#test-lvl").val('C1');
     } else if ($("#sum").val() > 23 && $("#sum").val() < 25){
         $("#nivo").text('C2');
+        $("#test-lvl").val('C2');
     }
 });
 	}

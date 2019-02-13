@@ -136,7 +136,7 @@
 <!-- CONTACT FORM -->
 <div class="contact-container">
 
-<form action="https://savakovacevic.github.io/tower/app/contact.php" class="contact" method="post">
+<form id="contact-form" class="contact">
   <h1>Kontaktirajte nas</h1>
   <div class="group">
     <input type="text" id="name" name="name" required="required"/>
@@ -151,9 +151,13 @@
     <label for="message">Vaša poruka</label>
   </div>
   <div class="group">
-  <button type="submit" value="Submit" class="btn btn--transition btn--width">POŠALJI</button>
+  <button type="submit" value="Submit" class="btn btn--transition btn--width contact-form">POŠALJI</button>
 </div>
 </form>
+
+<div class="success hide">
+	Hvala sto ste nas kontaktirali!
+</div>
 
 
 </div>

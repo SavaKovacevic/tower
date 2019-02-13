@@ -101,6 +101,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_TestPage__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(9);
 /* harmony import */ var _modules_DisplayTestResults__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(10);
 /* harmony import */ var _modules_FormSubmission__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(11);
+/* harmony import */ var _modules_ContactForm__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(12);
+/* harmony import */ var _modules_TestResults__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(13);
+
+
 
 
 
@@ -112,6 +116,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var formSubmission = new _modules_FormSubmission__WEBPACK_IMPORTED_MODULE_9__["default"]();
+var contactForm = new _modules_ContactForm__WEBPACK_IMPORTED_MODULE_10__["default"]();
+var testResults = new _modules_TestResults__WEBPACK_IMPORTED_MODULE_11__["default"]();
 var testPage = new _modules_TestPage__WEBPACK_IMPORTED_MODULE_7__["default"]();
 var displayTestResults = new _modules_DisplayTestResults__WEBPACK_IMPORTED_MODULE_8__["default"]();
 var mobileMenu = new _modules_MobileMenu__WEBPACK_IMPORTED_MODULE_1__["default"]('#hamburger-menu-toggle');
@@ -11899,18 +11905,24 @@ var TestPage = function TestPage() {
     var suma = 0;
     suma += Number(jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res"]').val()) + Number(jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res2"]').val()) + Number(jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res3"]').val()) + Number(jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res4"]').val()) + Number(jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res5"]').val()) + Number(jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res6"]').val()) + Number(jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res7"]').val()) + Number(jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res8"]').val()) + Number(jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res9"]').val()) + Number(jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res10"]').val()) + Number(jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res11"]').val()) + Number(jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res12"]').val()) + Number(jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res13"]').val()) + Number(jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res14"]').val()) + Number(jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res15"]').val()) + Number(jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res16"]').val()) + Number(jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res17"]').val()) + Number(jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res18"]').val()) + Number(jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res19"]').val()) + Number(jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res20"]').val()) + Number(jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res21"]').val()) + Number(jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res22"]').val()) + Number(jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res23"]').val()) + Number(jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res24"]').val()) + Number(jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[id="res25"]').val());
     jquery__WEBPACK_IMPORTED_MODULE_0___default()("#sum").val(suma);
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#test-score').val(suma);
   });
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[type="radio"]').on('change', function () {
     if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("#sum").val() > 6 && jquery__WEBPACK_IMPORTED_MODULE_0___default()("#sum").val() < 12) {
       jquery__WEBPACK_IMPORTED_MODULE_0___default()("#nivo").text('A2');
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()("#test-lvl").val('A2');
     } else if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("#sum").val() > 13 && jquery__WEBPACK_IMPORTED_MODULE_0___default()("#sum").val() < 17) {
       jquery__WEBPACK_IMPORTED_MODULE_0___default()("#nivo").text('B1');
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()("#test-lvl").val('B1');
     } else if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("#sum").val() > 18 && jquery__WEBPACK_IMPORTED_MODULE_0___default()("#sum").val() < 21) {
       jquery__WEBPACK_IMPORTED_MODULE_0___default()("#nivo").text('B2');
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()("#test-lvl").val('B2');
     } else if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("#sum").val() == 22) {
       jquery__WEBPACK_IMPORTED_MODULE_0___default()("#nivo").text('C1');
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()("#test-lvl").val('C1');
     } else if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("#sum").val() > 23 && jquery__WEBPACK_IMPORTED_MODULE_0___default()("#sum").val() < 25) {
       jquery__WEBPACK_IMPORTED_MODULE_0___default()("#nivo").text('C2');
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()("#test-lvl").val('C2');
     }
   });
 };
@@ -12009,6 +12021,71 @@ var FormSubmission = function FormSubmission() {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (FormSubmission);
+
+/***/ }),
+/* 12 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+
+
+var ContactForm = function ContactForm() {
+  _classCallCheck(this, ContactForm);
+
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).on('submit', '#contact-form', function (e) {
+    e.preventDefault();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default.a.ajax({
+      type: 'post',
+      url: 'contact.php',
+      data: jquery__WEBPACK_IMPORTED_MODULE_0___default()('#contact-form').serialize(),
+      success: function success() {
+        jquery__WEBPACK_IMPORTED_MODULE_0___default()('#contact-form').hide();
+        jquery__WEBPACK_IMPORTED_MODULE_0___default()('.success').show();
+      },
+      error: function error() {
+        alert('Došlo je do greške, molimo pokušajte ponovo.');
+      }
+    });
+  });
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (ContactForm);
+
+/***/ }),
+/* 13 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+
+
+var TestResults = function TestResults() {
+  _classCallCheck(this, TestResults);
+
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).on('submit', '#test-results', function (e) {
+    e.preventDefault();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default.a.ajax({
+      type: 'post',
+      url: 'test.php',
+      data: jquery__WEBPACK_IMPORTED_MODULE_0___default()('#test-results').serialize(),
+      success: function success(data, response) {},
+      error: function error() {
+        alert('Došlo je do greške, molimo pokušajte ponovo.');
+      }
+    });
+  });
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (TestResults);
 
 /***/ })
 /******/ ]);

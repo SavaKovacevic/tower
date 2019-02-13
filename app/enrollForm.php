@@ -31,9 +31,7 @@ $headers[] = 'Content-type: text/html; charset=iso-8859-1';
 
 // Additional headers
 $headers[] = 'To: Sava <s86.kovacevic@gmail.com>';
-$headers[] = 'From: ' . $from . '';
-
-echo($message);
+$headers[] = 'From: ' . $email . '';
 
 // Mail it
 mail($to, $subject, $message, implode("\r\n", $headers));

@@ -292,20 +292,17 @@
 
 <div class="test__results--hidden contact-form">
 		
-		<form method="post" action="http://www.studio-tower.com/formmail.php" name="SampleForm">
-		<input type="hidden" name="env_report" value="REMOTE_HOST,REMOTE_ADDR,HTTP_USER_AGENT,AUTH_TYPE,REMOTE_USER"/>
-		<input type="hidden" name="recipients" value="studio.tower@gmail.com"/>
-		<input type="hidden" name="required" value="email:Your email address,realname:Your name"/>
-		<input type="hidden" name="subject" value="On-line test Engleskog"/>
-		<input type="hidden" name="good_url" value="http://www.studio-tower.com/thanks.html"/>
-		<input type="hidden" name="bad_url" value="http://www.studio-tower.com/error.html"/>
+		<form id="test-results" name="SampleForm">
+		<input id="test-score" type="hidden" name="score" value=""/>
+		<input id="test-lvl" type="hidden" name="level" value=""/>
 		
 
-        <p class="standard">Vaš skor je:
+        <p class="standard">
+					Vaš skor je:
+					<input type="text" id="sum" name="mesg" size="1" readonly/>
+				</p>
 
-		<input type="text" id="sum" name="mesg" size="1" readonly/></p>
-
-		 <p class="standard"> Vaš nivo znanja je:
+		<p class="standard"> Vaš nivo znanja je:
 		<span id="nivo"></span></p>
 
 		<p class="standard">

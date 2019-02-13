@@ -8,8 +8,12 @@ import NumberCounter from './modules/NumberCounter';
 import TestPage from './modules/TestPage';
 import DisplayTestResults from './modules/DisplayTestResults';
 import FormSubmission from './modules/FormSubmission';
+import ContactForm from './modules/ContactForm';
+import TestResults from './modules/TestResults';
 
 var formSubmission = new FormSubmission();
+var contactForm = new ContactForm();
+var testResults = new TestResults();
 var testPage = new TestPage();
 var displayTestResults = new DisplayTestResults();
 var mobileMenu = new MobileMenu('#hamburger-menu-toggle');
